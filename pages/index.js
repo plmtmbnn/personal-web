@@ -11,9 +11,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="It's Polma Tambunan." />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          <code><a href='https://www.instagram.com/polmatambunan/'>https://www.instagram.com/polmatambunan/</a></code>
         </p>
       </main>
 
