@@ -8,8 +8,14 @@ export default function Home() {
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="polma tambunan - cooderu.com" />
+  <meta property="og:title" content="polma tambunan - cooderu.com"/>
+  <meta property="og:description" content="polma tambunan - cooderu.com"/>
+  <meta property="og:url" content="https://cooderu.com/"/>
+  <meta property="og:type" content="website"/>
       </Head>
-
       <main>
         <Header title="It's Polma Tambunan." />
         <p className="description">
