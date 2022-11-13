@@ -1,29 +1,28 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import React from "react";
+import Footer from "@components/Footer";
+
+import { Container, Row } from "reactstrap";
+
+import NavBar from "../components/NavBar";
 
 export default function Home() {
   return (
-    <div className="container">
-      <Head>
-        <title>Polma Tambunan - Personal Website</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="polma tambunan - cooderu.com" />
-  <meta property="og:title" content="polma tambunan - cooderu.com"/>
-  <meta property="og:description" content="polma tambunan - cooderu.com"/>
-  <meta property="og:url" content="https://cooderu.com/"/>
-  <meta property="og:type" content="website"/>
-      </Head>
-      <main>
-        <Header title="It's Polma Tambunan." />
-        <p className="description">
-          <code><a href='https://www.instagram.com/polmatambunan/'>https://www.instagram.com/polmatambunan/</a></code>
-        </p>
-      </main>
-
-      <Footer />
+    <div>
+      <Container>
+        <NavBar />
+        <div
+          style={{ height: "80vh" }}
+          className="text-center d-flex justify-content-center"
+        >
+          <Row>
+            <h1 className="align-self-end">{"It's Polma Tambunan."}</h1>
+            <a href="https://www.instagram.com/polmatambunan/">
+              https://www.instagram.com/polmatambunan/
+            </a>
+          </Row>
+        </div>
+        <Footer />
+      </Container>
     </div>
-  )
+  );
 }

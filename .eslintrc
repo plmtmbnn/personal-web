@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "react-app"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "react-hooks/exhaustive-deps": "error",
+    "react/require-default-props": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "radix": [
+      0
+    ],
+    "import/no-extraneous-dependencies": [
+      0
+    ]
+  }
+}
