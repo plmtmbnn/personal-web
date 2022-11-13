@@ -1,10 +1,12 @@
 import React from "react";
 import Footer from "@components/Footer";
 
-import { Container, Row } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
 import NavBar from "../components/NavBar";
+import Link from "next/link";
 
+import { FiLinkedin, FiInstagram, FiMail } from "react-icons/fi";
 export default function Home() {
   return (
     <div>
@@ -14,11 +16,31 @@ export default function Home() {
           style={{ height: "80vh" }}
           className="text-center d-flex justify-content-center"
         >
-          <Row>
-            <h1 className="align-self-end">{"It's Polma Tambunan."}</h1>
-            <a href="https://www.instagram.com/polmatambunan/">
-              https://www.instagram.com/polmatambunan/
-            </a>
+          <Row className="align-self-center">
+            <Col xs="12">
+              <h1>{"It's Polma Tambunan."}</h1>
+            </Col>
+            <Col xs="4">
+              <Link
+                color="light"
+                href="https://www.linkedin.com/in/polma-tambunan/"
+              >
+                <FiLinkedin />
+              </Link>
+            </Col>
+            <Col xs="4">
+              <Link
+                color="light"
+                href="https://www.instagram.com/polmatambunan/"
+              >
+                <FiInstagram />
+              </Link>
+            </Col>
+            <Col xs="4">
+              <Link color="light" href="mailto:plmtmbnn@gmail.com">
+                <FiMail />
+              </Link>
+            </Col>
           </Row>
         </div>
         <Footer />

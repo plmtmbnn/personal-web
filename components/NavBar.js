@@ -6,14 +6,11 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+  NavLink
 } from "reactstrap";
 
 import Head from "next/head";
+import Link from "next/link";
 
 export default function NavBar({ args }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,18 +32,18 @@ export default function NavBar({ args }) {
         />
         <meta property="og:url" content="https://cooderu.com/" />
         <meta property="og:type" content="website" />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-        />
       </Head>
       <Navbar {...args} expand="md">
-        <NavbarBrand href="/">Polma Tambunan</NavbarBrand>
+        <Link className="navbar-brand" href="/">
+          Polma Tambunan
+        </Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="/profile/">Profile</NavLink>
+              <Link className="nav-link" href="/profile/">
+                Profile
+              </Link>
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/plmtmbnn/plmtmbnn">
