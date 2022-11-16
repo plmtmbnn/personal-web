@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 
 import NavBar from "../components/NavBar";
 
@@ -7,7 +7,13 @@ export default function Profile() {
   return (
     <Container>
       <NavBar />
-      <div className="text-center">No Profile Yet</div>
+      <Container>
+        <Row md="1">
+          <Col md="12" className="text-center">
+            still writing...
+          </Col>
+        </Row>
+      </Container>
     </Container>
   );
 }

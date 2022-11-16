@@ -35,7 +35,7 @@ export default function NavBar({ args }) {
       </Head>
       <Navbar {...args} expand="md">
         <Link className="navbar-brand" href="/">
-          Polma Tambunan
+          Polma.
         </Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
