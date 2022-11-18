@@ -15,7 +15,7 @@ export default function index() {
           <Col md="5">
             <Row className="align-items-center" style={{ height: "80vh" }}>
               <Col xs="12" className="align-self-end">
-                <h1 className="text-left">{"Hi, I am Polma Tambunan."}</h1>
+                <h1 className="text-left">Hi, I am Polma Tambunan.</h1>
                 <div>
                   <h4
                     style={{
@@ -32,11 +32,11 @@ export default function index() {
                     <p className="text-left text-muted">
                       I'm working remotely from Toba. Currently fluent in doing
                       some awesome full-stack projects with Javascript /
-                      Typescript (Node Js & React Js) but still exploring some
-                      technologies.
+                      Typescript (Node Js & React Js) with 5 years of
+                      experience.
                     </p>
                   </Col>
-                  <Col xs="4" className="align-self-start">
+                  <Col xs="3" className="align-self-start">
                     <Row>
                       <Col xs="4">
                         <Link

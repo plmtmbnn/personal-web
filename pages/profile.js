@@ -8,9 +8,9 @@ export default function Profile() {
     <Container>
       <NavBar />
       <Container>
-        <Row md="1">
-          <Col md="12" className="text-center">
-            still writing...
+        <Row md="1" style={{ height: "80vh" }}>
+          <Col md="12" className="text-center align-self-center">
+            I am still writing for this...
           </Col>
         </Row>
       </Container>
