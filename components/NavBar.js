@@ -37,12 +37,12 @@ export default function NavBar({ args }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRozAieWPt6xyi6Ju448OTelaLbnSXqRs9yHw&usqp=CAU"
+          content="https://pbs.twimg.com/profile_images/1563897972831973376/6O5EV_rX_400x400.jpg"
         />
 
         <meta
           property="twitter:card"
-          content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRozAieWPt6xyi6Ju448OTelaLbnSXqRs9yHw&usqp=CAU"
+          content="https://pbs.twimg.com/profile_images/1563897972831973376/6O5EV_rX_400x400.jpg"
         />
         <meta property="twitter:url" content="https://polmatambunan.my.id/" />
         <meta
