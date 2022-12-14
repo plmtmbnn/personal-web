@@ -37,7 +37,7 @@ export default function NavBar({ args }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://pbs.twimg.com/profile_images/1563897972831973376/6O5EV_rX_400x400.jpg"
+          content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRozAieWPt6xyi6Ju448OTelaLbnSXqRs9yHw&usqp=CAU"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -52,7 +52,7 @@ export default function NavBar({ args }) {
         />
         <meta
           property="twitter:image"
-          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+          content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRozAieWPt6xyi6Ju448OTelaLbnSXqRs9yHw&usqp=CAU"
         />
       </Head>
       <Navbar {...args} expand="md">
