@@ -40,7 +40,7 @@ export default function NavBar({ args }) {
           content="https://pbs.twimg.com/profile_images/1563897972831973376/6O5EV_rX_400x400.jpg"
         />
 
-        <meta property="twitter:card" content="View photo" />
+        <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://polmatambunan.my.id/" />
         <meta
           property="twitter:title"
