@@ -37,7 +37,7 @@ export default function NavBar({ args }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRozAieWPt6xyi6Ju448OTelaLbnSXqRs9yHw&usqp=CAU"
+          content="https://www.pngitem.com/pimgs/m/106-1063279_earth-drawing-cartoon-free-hd-image-clipart-earth.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -52,7 +52,7 @@ export default function NavBar({ args }) {
         />
         <meta
           property="twitter:image"
-          content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRozAieWPt6xyi6Ju448OTelaLbnSXqRs9yHw&usqp=CAU"
+          content="https://www.pngitem.com/pimgs/m/106-1063279_earth-drawing-cartoon-free-hd-image-clipart-earth.png"
         />
       </Head>
       <Navbar {...args} expand="md">
