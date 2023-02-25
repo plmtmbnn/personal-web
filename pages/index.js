@@ -6,6 +6,11 @@ import NavBar from "../components/NavBar";
 import Link from "next/link";
 import { FiLinkedin, FiInstagram, FiMail } from "react-icons/fi";
 
+import Image from "next/image";
+
+import avatar from "../styles/images/avatar.png";
+import moment from "moment/moment";
+
 export default function index() {
   return (
     <Container>
@@ -22,7 +27,7 @@ export default function index() {
                       color: "#0575e6"
                     }}
                   >
-                    Full Stack Developer
+                    Software Developer
                   </h4>
                 </div>
               </Col>
@@ -30,10 +35,11 @@ export default function index() {
                 <Row>
                   <Col xs="12">
                     <p className="text-left text-muted">
-                      I'm working remotely from Toba. Currently fluent in doing
-                      some awesome full-stack projects with Javascript /
-                      Typescript (Node Js & React Js) with 5 years of
-                      experience.
+                      I'm working remotely from Toba. Currently fluent in
+                      developing awesome full-stack projects with Javascript /
+                      Typescript (Node Js & React Js) with{" "}
+                      {moment().diff(moment("2018-01-01", "YYYY-MM-DD"), "y")}{" "}
+                      years of experiences.
                     </p>
                   </Col>
                   <Col xs="3" className="align-self-start">
@@ -71,10 +77,14 @@ export default function index() {
               className="align-items-center justify-items-center"
             >
               <Col md="12" className="text-center">
-                <img
-                  style={{ width: "300px" }}
+                <Image
+                  style={{
+                    width: "250px",
+                    height: "250px",
+                    verticalAlign: "middle"
+                  }}
                   alt="my-img"
-                  src="https://pbs.twimg.com/profile_images/1563897972831973376/6O5EV_rX_400x400.jpg"
+                  src={avatar}
                 />
               </Col>
             </Row>
