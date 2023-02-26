@@ -9,6 +9,9 @@ import {
   NavLink
 } from "reactstrap";
 
+import logo from "../styles/images/logo-web.svg";
+import Image from "next/image";
+
 import Head from "next/head";
 import Link from "next/link";
 
@@ -56,9 +59,12 @@ export default function NavBar({ args }) {
         />
       </Head>
       <Navbar {...args} expand="md">
-        <Link className="navbar-brand" href="/">
+        <NavbarBrand href="/">
+          <Image src={logo} style={{ width: "100px" }} />
+        </NavbarBrand>
+        {/* <Link className="navbar-brand" href="/">
           Polma.
-        </Link>
+        </Link> */}
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
