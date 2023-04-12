@@ -59,12 +59,12 @@ export default function NavBar({ args }) {
         />
       </Head>
       <Navbar {...args} expand="md">
-        <NavbarBrand href="/">
-          <Image src={logo} style={{ width: "100px" }} />
-        </NavbarBrand>
-        {/* <Link className="navbar-brand" href="/">
+        {/* <NavbarBrand href="/">
+          <Image src={logo} style={{ width: "60" }} />
+        </NavbarBrand> */}
+        <Link className="navbar-brand" href="/">
           Polma.
-        </Link> */}
+        </Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>

@@ -8,7 +8,7 @@ import { FiLinkedin, FiInstagram, FiMail } from "react-icons/fi";
 
 import Image from "next/image";
 
-import avatar from "../styles/images/avatar.png";
+import avatar from "../styles/images/ava.jpg";
 import moment from "moment/moment";
 
 export default function index() {
