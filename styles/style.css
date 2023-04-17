@@ -32,8 +32,9 @@ body {
 }
 
 .nav-link:hover {
-    color: black;
+    color: #66a6ff;
     border-bottom: 4px solid #66a6ff;
+    font-weight: bold;
 }
 
 .nav-active a {

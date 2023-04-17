@@ -11,36 +11,33 @@ import Image from "next/image";
 import avatar from "../styles/images/ava.jpg";
 import moment from "moment/moment";
 
-import { Fade, Slide, JackInTheBox, Zoom } from "react-awesome-reveal";
+import { Fade, Slide, JackInTheBox, Bounce } from "react-awesome-reveal";
 
 export default function index() {
   return (
     <Container>
       <NavBar />
-      <Container>
         <Row className="vh-100 align-items-center">
           <Col md="7" xs="12" className="d-flex justify-content-center">
             <Row>
               <Col xs="12" className="align-self-end">
-                <Slide>
-                  <h1 className="text-left">Hi, I am Polma Tambunan.</h1>
-                </Slide>
-                <JackInTheBox>
+                  <Slide><h1 className="text-left">Hi, I am Polma Tambunan.</h1></Slide>
                   <div>
                     <h5
                       style={{
                         color: "#0575e6"
                       }}
                     >
-                      Software Developer
+                      <Fade delay={0} cascade damping={1e-1}>Tech Enthusiast</Fade>
+                      <Fade delay={2000} cascade damping={1e-1}>{ ' | '}</Fade>
+                      <Fade delay={500} cascade damping={1e-1}>Amateur Runner</Fade>
                     </h5>
                   </div>
-                </JackInTheBox>
               </Col>
               <Col xs="12" className="align-self-start">
                 <Row>
                   <Col xs="12">
-                    <Fade delay={1e3} cascade>
+                    <Fade delay={1e3} cascade damping={1e-1}>
                       <p className="text-left text-muted">
                         I'm working remotely from Toba. Currently fluent in
                         developing awesome full-stack projects with Javascript /
@@ -60,31 +57,31 @@ export default function index() {
                   <Col xs="3" className="align-self-start">
                     <Row>
                       <Col xs="4">
-                        <Zoom delay={500} cascade>
+                        <Bounce delay={500} cascade>
                           <Link
                             color="light"
                             href="https://www.linkedin.com/in/polma-tambunan/"
                           >
                             <FiLinkedin />
                           </Link>
-                        </Zoom>
+                        </Bounce>
                       </Col>
                       <Col xs="4">
-                        <Zoom delay={1000} cascade>
+                        <Bounce delay={1000} cascade>
                           <Link
                             color="light"
                             href="https://www.instagram.com/polmatambunan/"
                           >
                             <FiInstagram />
                           </Link>
-                        </Zoom>
+                        </Bounce>
                       </Col>
                       <Col xs="4">
-                        <Zoom delay={1500} cascade>
+                        <Bounce delay={1500} cascade>
                           <Link color="light" href="mailto:plmtmbnn@gmail.com">
                             <FiMail />
                           </Link>
-                        </Zoom>
+                        </Bounce>
                       </Col>
                     </Row>
                   </Col>
@@ -110,7 +107,6 @@ export default function index() {
             </Row>
           </Col>
         </Row>
-      </Container>
     </Container>
   );
 }

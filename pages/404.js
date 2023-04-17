@@ -7,7 +7,7 @@ export default function Custom404() {
     <Container>
       <h1>404 - Page Not Found</h1>
       <hr />
-      <Link href="/profile">Go back home</Link>
+      <Link href="/">Go back home</Link>
     </Container>
   );
 }
