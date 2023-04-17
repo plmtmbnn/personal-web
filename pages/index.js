@@ -44,7 +44,7 @@ export default function index() {
                       <p className="text-left text-muted">
                         I'm working remotely from Toba. Currently fluent in
                         developing awesome full-stack projects with Javascript /
-                        Typescript (Node Js & React Js) with
+                        Typescript (NodeJs & ReactJs) with
                         <b>
                           {" "}
                           {moment().diff(
