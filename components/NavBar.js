@@ -58,12 +58,16 @@ export default function NavBar({ args }) {
           content="https://www.pngitem.com/pimgs/m/106-1063279_earth-drawing-cartoon-free-hd-image-clipart-earth.png"
         />
       </Head>
-      <Navbar {...args} expand="md">
+      <Navbar
+        {...args}
+        expand="md"
+        className="navbar navbar-expand-lg navbar-light"
+      >
         {/* <NavbarBrand href="/">
           <Image src={logo} style={{ width: "60" }} />
         </NavbarBrand> */}
         <Link className="navbar-brand" href="/">
-          Polma.
+          <div className="navbar-title">plmtmbnn.</div>
         </Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

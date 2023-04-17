@@ -11,59 +11,80 @@ import Image from "next/image";
 import avatar from "../styles/images/ava.jpg";
 import moment from "moment/moment";
 
+import { Fade, Slide, JackInTheBox, Zoom } from "react-awesome-reveal";
+
 export default function index() {
   return (
     <Container>
       <NavBar />
       <Container>
-        <Row md="1">
-          <Col md="5">
-            <Row className="align-items-center" style={{ height: "80vh" }}>
+        <Row className="vh-100 align-items-center">
+          <Col md="7" xs="12" className="d-flex justify-content-center">
+            <Row>
               <Col xs="12" className="align-self-end">
-                <h1 className="text-left">Hi, I am Polma Tambunan.</h1>
-                <div>
-                  <h4
-                    style={{
-                      color: "#0575e6"
-                    }}
-                  >
-                    Software Developer
-                  </h4>
-                </div>
+                <Slide>
+                  <h1 className="text-left">Hi, I am Polma Tambunan.</h1>
+                </Slide>
+                <JackInTheBox>
+                  <div>
+                    <h5
+                      style={{
+                        color: "#0575e6"
+                      }}
+                    >
+                      Software Developer
+                    </h5>
+                  </div>
+                </JackInTheBox>
               </Col>
               <Col xs="12" className="align-self-start">
                 <Row>
                   <Col xs="12">
-                    <p className="text-left text-muted">
-                      I'm working remotely from Toba. Currently fluent in
-                      developing awesome full-stack projects with Javascript /
-                      Typescript (Node Js & React Js) with{" "}
-                      {moment().diff(moment("2018-01-01", "YYYY-MM-DD"), "y")}{" "}
-                      years of experiences.
-                    </p>
+                    <Fade delay={1e3} cascade>
+                      <p className="text-left text-muted">
+                        I'm working remotely from Toba. Currently fluent in
+                        developing awesome full-stack projects with Javascript /
+                        Typescript (Node Js & React Js) with
+                        <b>
+                          {" "}
+                          {moment().diff(
+                            moment("2018-01-01", "YYYY-MM-DD"),
+                            "y"
+                          )}
+                          {" years "}
+                        </b>{" "}
+                        of experiences.
+                      </p>
+                    </Fade>
                   </Col>
                   <Col xs="3" className="align-self-start">
                     <Row>
                       <Col xs="4">
-                        <Link
-                          color="light"
-                          href="https://www.linkedin.com/in/polma-tambunan/"
-                        >
-                          <FiLinkedin />
-                        </Link>
+                        <Zoom delay={500} cascade>
+                          <Link
+                            color="light"
+                            href="https://www.linkedin.com/in/polma-tambunan/"
+                          >
+                            <FiLinkedin />
+                          </Link>
+                        </Zoom>
                       </Col>
                       <Col xs="4">
-                        <Link
-                          color="light"
-                          href="https://www.instagram.com/polmatambunan/"
-                        >
-                          <FiInstagram />
-                        </Link>
+                        <Zoom delay={1000} cascade>
+                          <Link
+                            color="light"
+                            href="https://www.instagram.com/polmatambunan/"
+                          >
+                            <FiInstagram />
+                          </Link>
+                        </Zoom>
                       </Col>
                       <Col xs="4">
-                        <Link color="light" href="mailto:plmtmbnn@gmail.com">
-                          <FiMail />
-                        </Link>
+                        <Zoom delay={1500} cascade>
+                          <Link color="light" href="mailto:plmtmbnn@gmail.com">
+                            <FiMail />
+                          </Link>
+                        </Zoom>
                       </Col>
                     </Row>
                   </Col>
@@ -71,22 +92,21 @@ export default function index() {
               </Col>
             </Row>
           </Col>
-          <Col md="7">
-            <Row
-              style={{ height: "80vh" }}
-              className="align-items-center justify-items-center"
-            >
-              <Col md="12" className="text-center">
-                <Image
-                  style={{
-                    width: "250px",
-                    height: "250px",
-                    verticalAlign: "middle"
-                  }}
-                  alt="my-img"
-                  src={avatar}
-                />
-              </Col>
+          <Col md="5" xs="12" className="d-flex justify-content-center">
+            <Row>
+              <Fade delay={1e3} cascade>
+                <Col md="12" className="text-center">
+                  <Image
+                    style={{
+                      width: "250px",
+                      height: "250px",
+                      verticalAlign: "middle"
+                    }}
+                    alt="my-img"
+                    src={avatar}
+                  />
+                </Col>
+              </Fade>
             </Row>
           </Col>
         </Row>
