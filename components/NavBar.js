@@ -61,11 +61,9 @@ export default function NavBar({ args }) {
       <Navbar
         {...args}
         expand="md"
-        className="navbar navbar-expand-lg navbar-light"
+        className="navbar navbar-expand-lg navbar-light navbar-inverse navbar-fixed-top"
       >
-        {/* <NavbarBrand href="/">
-          <Image src={logo} style={{ width: "60" }} />
-        </NavbarBrand> */}
+        {/* <Image src={logo} style={{ width: "60" }} /> */}
         <Link className="navbar-brand" href="/">
           <div className="navbar-title">plmtmbnn.</div>
         </Link>
@@ -73,14 +71,19 @@ export default function NavBar({ args }) {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <Link className="nav-link" href="/profile/">
-                Profile
+              <Link className="nav-link" href="/about/">
+                About
               </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/plmtmbnn/plmtmbnn">
-                GitHub
-              </NavLink>
+              <Link className="nav-link" href="/my-work/">
+                My Work
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link className="nav-link" href="/blog/">
+                Blog
+              </Link>
             </NavItem>
           </Nav>
         </Collapse>
