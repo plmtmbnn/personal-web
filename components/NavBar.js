@@ -60,7 +60,7 @@ export default function NavBar({ args }) {
         <NavbarToggler
           onClick={toggle}
           style={{
-            border: "1px solid #66a6ff",
+            border: "0px solid #66a6ff",
             borderRadius: "50px",
             padding: "10px"
           }}
