@@ -11,19 +11,16 @@ export default function About() {
   return (
     <Container>
       <NavBar />
-      <Row style={{ height: "80vh", margin: "10px 5px" }}>
+      <Row style={{ height: "75vh", margin: "10px 5px" }}>
         <Col sm="12" className="text-left">
           <Fade delay={500} cascade damping={1e-1}>
             <h5>Introduction & Background</h5>
             <p className="text-left text-muted">
               {"I'm "}working remotely from Toba. Currently fluent in developing
               awesome full-stack projects with Javascript / Typescript (NodeJs &
-              ReactJs) with
-              <b>
-                {" "}
-                {moment().diff(moment("2018-01-01", "YYYY-MM-DD"), "y")}
-                {" years "}
-              </b>{" "}
+              ReactJs) with{" "}
+              {moment().diff(moment("2018-01-01", "YYYY-MM-DD"), "y")}
+              {" years "}
               of experiences in Financial Technology.
             </p>
           </Fade>

@@ -1,19 +1,10 @@
 import React, { useState } from "react";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink
-} from "reactstrap";
-
-import logo from "../styles/images/logo-web.svg";
-import Image from "next/image";
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
 
 import Head from "next/head";
 import Link from "next/link";
+
+import { TiThSmall } from "react-icons/ti";
 
 export default function NavBar({ args }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,24 +54,32 @@ export default function NavBar({ args }) {
         expand="md"
         className="navbar navbar-expand-lg navbar-light navbar-inverse navbar-fixed-top"
       >
-        {/* <Image src={logo} style={{ width: "60" }} /> */}
         <Link className="navbar-brand" href="/">
           <div className="navbar-title">plmtmbnn.</div>
         </Link>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler
+          onClick={toggle}
+          style={{
+            border: "1px solid #66a6ff",
+            borderRadius: "50px",
+            padding: "10px"
+          }}
+        >
+          <TiThSmall style={{ color: "#66a6ff" }} />
+        </NavbarToggler>
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
-            <NavItem>
+          <Nav navbar className="ml-auto d-flex justify-content-center">
+            <NavItem className="align-self-center">
               <Link className="nav-link" href="/about/">
                 About
               </Link>
             </NavItem>
-            <NavItem>
+            <NavItem className="align-self-center">
               <Link className="nav-link" href="/my-work/">
                 My Work
               </Link>
             </NavItem>
-            <NavItem>
+            <NavItem className="align-self-center">
               <Link className="nav-link" href="/blog/">
                 Blog
               </Link>

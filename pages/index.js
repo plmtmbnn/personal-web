@@ -12,13 +12,13 @@ import Image from "next/image";
 import avatar from "../styles/images/ava.jpg";
 import moment from "moment/moment";
 
-import { Fade, Slide, JackInTheBox, Bounce } from "react-awesome-reveal";
+import { Fade, Slide, Bounce } from "react-awesome-reveal";
 
 export default function index() {
   return (
     <Container>
       <NavBar />
-      <Row style={{ height: "80vh" }} className="align-items-center">
+      <Row style={{ height: "75vh" }} className="align-items-center">
         <Col md="7" xs="12" className="d-flex justify-content-center">
           <Row>
             <Col xs="12" className="align-self-end">
@@ -50,12 +50,9 @@ export default function index() {
                     <p className="text-left text-muted">
                       {"I'm "}working remotely from Toba. Currently fluent in
                       developing awesome full-stack projects with Javascript /
-                      Typescript (NodeJs & ReactJs) with
-                      <b>
-                        {" "}
-                        {moment().diff(moment("2018-01-01", "YYYY-MM-DD"), "y")}
-                        {" years "}
-                      </b>{" "}
+                      Typescript (NodeJs & ReactJs) with{" "}
+                      {moment().diff(moment("2018-01-01", "YYYY-MM-DD"), "y")}
+                      {" years "}
                       of experiences in Financial Technology.
                     </p>
                   </Fade>
@@ -97,7 +94,7 @@ export default function index() {
         </Col>
         <Col md="5" xs="12" className="d-flex justify-content-center">
           <Row>
-            <JackInTheBox delay={1e3} cascade>
+            <Fade delay={1e3} cascade>
               <Col md="12" className="text-center">
                 <Image
                   style={{
@@ -109,7 +106,7 @@ export default function index() {
                   src={avatar}
                 />
               </Col>
-            </JackInTheBox>
+            </Fade>
           </Row>
         </Col>
       </Row>
