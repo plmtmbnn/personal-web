@@ -64,6 +64,7 @@ export default function index() {
                         <Link
                           color="light"
                           href="https://www.linkedin.com/in/polma-tambunan/"
+                          target="_blank"
                         >
                           <FiLinkedin />
                         </Link>
@@ -74,6 +75,7 @@ export default function index() {
                         <Link
                           color="light"
                           href="https://www.instagram.com/polmatambunan/"
+                          target="_blank"
                         >
                           <FiInstagram />
                         </Link>
@@ -81,7 +83,11 @@ export default function index() {
                     </Col>
                     <Col xs="4">
                       <Bounce delay={1500} cascade>
-                        <Link color="light" href="mailto:plmtmbnn@gmail.com">
+                        <Link
+                          color="light"
+                          target="_blank"
+                          href="mailto:plmtmbnn@gmail.com"
+                        >
                           <FiMail />
                         </Link>
                       </Bounce>

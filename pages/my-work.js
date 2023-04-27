@@ -11,12 +11,9 @@ export default function MyWork() {
   return (
     <Container>
       <NavBar />
-      <Row style={{ height: "80vh", margin: "10px 5px" }}>
-        Here are some examples of my recent work.
+      <Row style={{ height: "75vh" }}>
         <Col md="12" className="text-left">
-          <Fade delay={1e3} cascade damping={1e-1}>
-            ...
-          </Fade>
+          <Fade>Here are some examples of my recent work.</Fade>
         </Col>
       </Row>
       <Footer />
