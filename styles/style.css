@@ -20,6 +20,9 @@ body {
     font-size: xx-large;
 }
 
+.navbar-title:hover {
+    color: #226bd1;
+}
 
 .navbar-brand img {
     width: 50px;
@@ -34,14 +37,14 @@ body {
 
 .nav-link:hover {
     color: black;
-    border-bottom: 2px solid #66a6ff;
+    border-bottom: 2px solid #226bd1;
     font-weight: bold;
 }
 
 .nav-active a {
     color: black !important;
     font-weight: 600;
-    border-bottom: 4px solid #66a6ff;
+    border-bottom: 4px solid #226bd1;
 }
 
 hr.style-two {
