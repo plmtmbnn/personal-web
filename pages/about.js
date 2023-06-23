@@ -16,12 +16,12 @@ export default function About() {
           <Fade delay={500} cascade damping={1e-1}>
             <h5>Introduction & Background</h5>
             <p className="text-left text-muted">
-              {"I'm "}working remotely from Toba. Currently fluent in developing
-              awesome full-stack projects with Javascript / Typescript (NodeJs &
-              ReactJs) with{" "}
-              {moment().diff(moment("2018-01-01", "YYYY-MM-DD"), "y")}
-              {" years "}
-              of experiences in Financial Technology.
+              A financial technology professional. Currently, I work remotely
+              from Toba. With a strong background in the industry, I am
+              dedicated to utilizing technology to foster innovation. I also
+              take pleasure in mentoring emerging professionals. In addition to
+              my professional pursuits, I am committed to maintaining a healthy
+              lifestyle by running 20 kilometers every week.
             </p>
           </Fade>
         </Col>

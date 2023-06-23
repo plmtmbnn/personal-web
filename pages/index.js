@@ -23,7 +23,7 @@ export default function index() {
           <Row>
             <Col xs="12" className="align-self-end">
               <Slide>
-                <h1 className="text-left">Hi, I am Polma Tambunan.</h1>
+                <h1 className="text-left">Hi, I am Polma Tambunan</h1>
               </Slide>
               <div>
                 <h5
@@ -48,12 +48,13 @@ export default function index() {
                 <Col xs="12">
                   <Fade delay={1e3} cascade damping={1e-1}>
                     <p className="text-left text-muted">
-                      {"I'm "}working remotely from Toba. Currently fluent in
-                      developing awesome full-stack projects with Javascript /
-                      Typescript (NodeJs & ReactJs) with{" "}
-                      {moment().diff(moment("2018-01-01", "YYYY-MM-DD"), "y")}
-                      {" years "}
-                      of experiences in Financial Technology.
+                      A financial technology professional. Currently, I work
+                      remotely from Toba. With a strong background in the
+                      industry, I am dedicated to utilizing technology to foster
+                      innovation. I also take pleasure in mentoring emerging
+                      professionals. In addition to my professional pursuits, I
+                      am committed to maintaining a healthy lifestyle by running
+                      20 kilometers every week.
                     </p>
                   </Fade>
                 </Col>
