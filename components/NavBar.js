@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
 
 import Head from "next/head";
@@ -8,8 +8,51 @@ import { TiThSmall } from "react-icons/ti";
 
 export default function NavBar({ args }) {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
+
+  const [isMobileView, setIsMobileView] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 600);
+    };
+
+    // Check on initial render
+    handleResize();
+
+    // Listen for resize events
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      // Clean up the event listener
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const NavBarShow = () => {
+    return (
+      <Nav
+        navbar
+        className="ml-auto d-flex justify-content-center "
+        style={{ width: "max-width", fontSize: "18px", fontWeight: "bold" }}
+      >
+        <NavItem className="align-self-center">
+          <Link className="nav-link" href="/about/">
+            About
+          </Link>
+        </NavItem>
+        <NavItem className="align-self-center">
+          <Link className="nav-link" href="/my-work/">
+            My Work
+          </Link>
+        </NavItem>
+        <NavItem className="align-self-center">
+          <Link className="nav-link" href="/blog/">
+            Blog
+          </Link>
+        </NavItem>
+      </Nav>
+    );
+  };
 
   return (
     <div>
@@ -57,35 +100,25 @@ export default function NavBar({ args }) {
         <Link className="navbar-brand" href="/">
           <div className="navbar-title">plmtmbnn.</div>
         </Link>
-        <NavbarToggler
-          onClick={toggle}
-          style={{
-            border: "0px solid #66a6ff",
-            borderRadius: "50px",
-            padding: "10px"
-          }}
-        >
-          <TiThSmall style={{ color: "#66a6ff" }} />
-        </NavbarToggler>
-        <Collapse isOpen={isOpen} navbar>
-          <Nav navbar className="ml-auto d-flex justify-content-center">
-            <NavItem className="align-self-center">
-              <Link className="nav-link" href="/about/">
-                About
-              </Link>
-            </NavItem>
-            <NavItem className="align-self-center">
-              <Link className="nav-link" href="/my-work/">
-                My Work
-              </Link>
-            </NavItem>
-            <NavItem className="align-self-center">
-              <Link className="nav-link" href="/blog/">
-                Blog
-              </Link>
-            </NavItem>
-          </Nav>
-        </Collapse>
+        {isMobileView ? (
+          <>
+            <NavbarToggler
+              onClick={toggle}
+              style={{
+                border: "0px solid #66a6ff",
+                borderRadius: "50px",
+                padding: "10px"
+              }}
+            >
+              <TiThSmall style={{ color: "#66a6ff" }} />
+            </NavbarToggler>
+            <Collapse isOpen={isOpen} navbar>
+              {NavBarShow()}
+            </Collapse>
+          </>
+        ) : (
+          NavBarShow()
+        )}
       </Navbar>
     </div>
   );

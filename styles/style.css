@@ -38,8 +38,9 @@ body {
 }
 
 .nav-link:hover {
-    border-bottom: 2px solid #66482f;
-    font-weight: bold;
+    color: #ffffff;
+    background-color: #66482f;
+    border-radius: 70%;
 }
 
 .nav-active a {
