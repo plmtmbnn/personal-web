@@ -10,7 +10,6 @@ import { FiLinkedin, FiInstagram, FiMail } from "react-icons/fi";
 import Image from "next/image";
 
 import avatar from "../styles/images/ava.jpg";
-import moment from "moment/moment";
 
 import { Fade, Slide, Bounce } from "react-awesome-reveal";
 
@@ -28,7 +27,7 @@ export default function index() {
               <div>
                 <h5
                   style={{
-                    color: "#0575e6"
+                    color: "#66482f"
                   }}
                 >
                   <Fade delay={0} cascade damping={1e-1}>
@@ -63,7 +62,9 @@ export default function index() {
                     <Col xs="4">
                       <Bounce delay={500} cascade>
                         <Link
-                          color="light"
+                          style={{
+                            color: "#66482f"
+                          }}
                           href="https://www.linkedin.com/in/polma-tambunan/"
                           target="_blank"
                         >
@@ -74,7 +75,9 @@ export default function index() {
                     <Col xs="4">
                       <Bounce delay={1000} cascade>
                         <Link
-                          color="light"
+                          style={{
+                            color: "#66482f"
+                          }}
                           href="https://www.instagram.com/polmatambunan/"
                           target="_blank"
                         >
@@ -85,7 +88,9 @@ export default function index() {
                     <Col xs="4">
                       <Bounce delay={1500} cascade>
                         <Link
-                          color="light"
+                          style={{
+                            color: "#66482f"
+                          }}
                           target="_blank"
                           href="mailto:plmtmbnn@gmail.com"
                         >
