@@ -5,7 +5,6 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
 import { Fade } from "react-awesome-reveal";
-import moment from "moment/moment";
 
 export default function About() {
   return (

@@ -2,20 +2,18 @@ import React from "react";
 import { Container, Col, Row } from "reactstrap";
 
 import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 
 import Link from "next/link";
 import { FiLinkedin, FiInstagram, FiMail } from "react-icons/fi";
 
-import Image from "next/image";
-
-import avatar from "../styles/images/ava.jpg";
-
 import { Fade, Slide, Bounce } from "react-awesome-reveal";
 
 export default function index() {
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 600; // Adjust the breakpoint as per your mobile device criteria
+  console.log("isMobile", isMobile);
   return (
     <Container>
+      <div class="background-image"></div>
       <NavBar />
       <Row style={{ height: "75vh" }} className="align-items-center">
         <Col md="7" xs="12" className="d-flex justify-content-center">
@@ -27,7 +25,7 @@ export default function index() {
               <div>
                 <h5
                   style={{
-                    color: "#66482f"
+                    color: "#E86A33"
                   }}
                 >
                   <Fade delay={0} cascade damping={1e-1}>
@@ -63,7 +61,7 @@ export default function index() {
                       <Bounce delay={500} cascade>
                         <Link
                           style={{
-                            color: "#66482f"
+                            color: "#263A29"
                           }}
                           href="https://www.linkedin.com/in/polma-tambunan/"
                           target="_blank"
@@ -76,7 +74,7 @@ export default function index() {
                       <Bounce delay={1000} cascade>
                         <Link
                           style={{
-                            color: "#66482f"
+                            color: "#263A29"
                           }}
                           href="https://www.instagram.com/polmatambunan/"
                           target="_blank"
@@ -89,7 +87,7 @@ export default function index() {
                       <Bounce delay={1500} cascade>
                         <Link
                           style={{
-                            color: "#66482f"
+                            color: "#263A29"
                           }}
                           target="_blank"
                           href="mailto:plmtmbnn@gmail.com"
@@ -104,25 +102,7 @@ export default function index() {
             </Col>
           </Row>
         </Col>
-        <Col md="5" xs="12" className="d-flex justify-content-center">
-          <Row>
-            <Fade delay={1e3} cascade>
-              <Col md="12" className="text-center">
-                <Image
-                  style={{
-                    width: "250px",
-                    height: "250px",
-                    verticalAlign: "middle"
-                  }}
-                  alt="my-img"
-                  src={avatar}
-                />
-              </Col>
-            </Fade>
-          </Row>
-        </Col>
       </Row>
-      <Footer />
     </Container>
   );
 }
