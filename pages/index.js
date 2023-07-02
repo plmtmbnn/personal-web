@@ -10,10 +10,9 @@ import { Fade, Slide, Bounce } from "react-awesome-reveal";
 
 export default function index() {
   const isMobile = typeof window !== "undefined" && window.innerWidth < 600; // Adjust the breakpoint as per your mobile device criteria
-  console.log("isMobile", isMobile);
   return (
     <Container>
-      <div class="background-image"></div>
+      <div className="background-image"></div>
       <NavBar />
       <Row style={{ height: "75vh" }} className="align-items-center">
         <Col md="7" xs="12" className="d-flex justify-content-center">
