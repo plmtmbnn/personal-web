@@ -61,7 +61,7 @@ hr.style-two {
     right: 0;
     width: 35%;
     height: 100%;
-    background-image: url('images/avatar-new.png');
+    background-image: url('../public/images/avatar-new.png');
     background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(1.2) contrast(1.2) saturate(2.3) blur(0) drop-shadow(0 0 0 transparent);
