@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Quattrocento Sans', sans-serif !important;
-    /* background: #EEEEEE */
 }
 
 .my-navbar {
@@ -19,11 +18,11 @@ body {
 .navbar-title {
     font-family: 'Mr De Haviland', cursive;
     font-size: xx-large;
-    color: #263A29;
+    color: #213363;
 }
 
 .navbar-title:hover {
-    color: #263A29;
+    color: #F79327;
 }
 
 .navbar-brand img {
@@ -35,12 +34,12 @@ body {
     margin-right: 24px;
     transition: 0.3s ease;
     padding: 5px;
-    color: #263A29;
+    color: #213363;
 }
 
 .nav-link:hover {
     color: white;
-    background-color: #41644A;
+    background-color: #213363;
 }
 
 .nav-active a {
@@ -57,10 +56,10 @@ hr.style-two {
 
 .background-image {
     position: fixed;
-    top: 0;
+    top: 10%;
     right: 0;
-    width: 35%;
-    height: 100%;
+    width: 29%;
+    height: 90%;
     background-image: url('../public/images/avatar-new.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,8 +67,10 @@ hr.style-two {
     image-rendering: crisp-edges;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     .background-image {
-        display: none;
+        position: relative;
+        display: block;
+        margin: auto;
     }
 }

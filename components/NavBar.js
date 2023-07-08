@@ -3,12 +3,14 @@ import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
 
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
-import { TiThSmall } from "react-icons/ti";
+import { TiThMenuOutline } from "react-icons/ti";
 
 export default function NavBar({ args }) {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+  const router = useRouter();
 
   const [isMobileView, setIsMobileView] = useState(false);
   useEffect(() => {
@@ -28,7 +30,15 @@ export default function NavBar({ args }) {
     };
   }, []);
 
-  const NavBarShow = () => {
+  const NavBarShow = pathname => {
+    const activeMenuStyling = targetPath => {
+      if (pathname === targetPath) {
+        return { backgroundColor: "#213363", color: "white" };
+      } else {
+        return {};
+      }
+    };
+
     return (
       <Nav
         navbar
@@ -36,17 +46,29 @@ export default function NavBar({ args }) {
         style={{ width: "max-width", fontSize: "18px", fontWeight: "bold" }}
       >
         <NavItem className="align-self-center">
-          <Link className="nav-link" href="/about/">
+          <Link
+            className="nav-link"
+            href="/about"
+            style={{ ...activeMenuStyling("/about") }}
+          >
             About
           </Link>
         </NavItem>
         <NavItem className="align-self-center">
-          <Link className="nav-link" href="/my-work/">
+          <Link
+            className="nav-link"
+            href="/my-work"
+            style={{ ...activeMenuStyling("/my-work") }}
+          >
             My Work
           </Link>
         </NavItem>
         <NavItem className="align-self-center">
-          <Link className="nav-link" href="/blog/">
+          <Link
+            className="nav-link"
+            href="/blog"
+            style={{ ...activeMenuStyling("/blog") }}
+          >
             Blog
           </Link>
         </NavItem>
@@ -105,19 +127,19 @@ export default function NavBar({ args }) {
             <NavbarToggler
               onClick={toggle}
               style={{
-                border: "0px solid #66a6ff",
+                border: "0px solid #213363",
                 borderRadius: "50px",
                 padding: "10px"
               }}
             >
-              <TiThSmall style={{ color: "#66a6ff" }} />
+              <TiThMenuOutline style={{ color: "#213363" }} />
             </NavbarToggler>
             <Collapse isOpen={isOpen} navbar>
-              {NavBarShow()}
+              {NavBarShow(router.pathname)}
             </Collapse>
           </>
         ) : (
-          NavBarShow()
+          NavBarShow(router.pathname)
         )}
       </Navbar>
     </div>

@@ -7,24 +7,27 @@ import Link from "next/link";
 import { FiLinkedin, FiInstagram, FiMail } from "react-icons/fi";
 
 import { Fade, Slide, Bounce } from "react-awesome-reveal";
-
+import myAvatar from "../public/images/avatar-new.png";
+import Image from "next/image";
+Image;
 export default function index() {
-  const isMobile = typeof window !== "undefined" && window.innerWidth < 600; // Adjust the breakpoint as per your mobile device criteria
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 900; // Adjust the breakpoint as per your mobile device criteria
   return (
     <Container>
-      <div className="background-image"></div>
       <NavBar />
       <Row style={{ height: "75vh" }} className="align-items-center">
         <Col md="7" xs="12" className="d-flex justify-content-center">
           <Row>
             <Col xs="12" className="align-self-end">
               <Slide>
-                <h1 className="text-left">Hi, I am Polma Tambunan</h1>
+                <h1 className="text-left" style={{ color: "#213363" }}>
+                  Polma Tambunan
+                </h1>
               </Slide>
               <div>
                 <h5
                   style={{
-                    color: "#E86A33"
+                    color: "#F79327"
                   }}
                 >
                   <Fade delay={0} cascade damping={1e-1}>
@@ -102,6 +105,17 @@ export default function index() {
           </Row>
         </Col>
       </Row>
+      <div>
+        {isMobile ? (
+          <div></div>
+        ) : (
+          <Image
+            src={myAvatar}
+            alt="PLMTMBNN"
+            className={"background-image"}
+          ></Image>
+        )}
+      </div>
     </Container>
   );
 }
