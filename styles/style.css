@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Quattrocento Sans', sans-serif !important;
+    background-color: #ffffff;
 }
 
 .my-navbar {
@@ -22,7 +23,7 @@ body {
 }
 
 .navbar-title:hover {
-    color: #F79327;
+    color: #F97B22;
 }
 
 .navbar-brand img {
@@ -38,14 +39,17 @@ body {
 }
 
 .nav-link:hover {
-    color: white;
-    background-color: #213363;
+    font-size: large;
+    margin-right: 24px;
+    transition: 0.3s ease;
+    padding: 5px;
+    color: #F97B22;
 }
 
 .nav-active a {
     color: black !important;
     font-weight: 600;
-    border-bottom: 4px solid #CBB279;
+    border-bottom: 4px solid #F97B22;
 }
 
 hr.style-two {
@@ -58,7 +62,7 @@ hr.style-two {
     position: fixed;
     top: 10%;
     right: 0;
-    width: 29%;
+    width: 25%;
     height: 90%;
     background-image: url('../public/images/avatar-new.png');
     background-repeat: no-repeat;

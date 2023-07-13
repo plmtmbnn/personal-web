@@ -27,7 +27,7 @@ export default function index() {
               <div>
                 <h5
                   style={{
-                    color: "#F79327"
+                    color: "#F97B22"
                   }}
                 >
                   <Fade delay={0} cascade damping={1e-1}>
@@ -63,7 +63,7 @@ export default function index() {
                       <Bounce delay={500} cascade>
                         <Link
                           style={{
-                            color: "#263A29"
+                            color: "#7C9070"
                           }}
                           href="https://www.linkedin.com/in/polma-tambunan/"
                           target="_blank"
@@ -76,7 +76,7 @@ export default function index() {
                       <Bounce delay={1000} cascade>
                         <Link
                           style={{
-                            color: "#263A29"
+                            color: "#7C9070"
                           }}
                           href="https://www.instagram.com/polmatambunan/"
                           target="_blank"
@@ -89,7 +89,7 @@ export default function index() {
                       <Bounce delay={1500} cascade>
                         <Link
                           style={{
-                            color: "#263A29"
+                            color: "#7C9070"
                           }}
                           target="_blank"
                           href="mailto:plmtmbnn@gmail.com"
@@ -106,15 +106,17 @@ export default function index() {
         </Col>
       </Row>
       <div>
-        {isMobile ? (
-          <div></div>
-        ) : (
-          <Image
-            src={myAvatar}
-            alt="PLMTMBNN"
-            className={"background-image"}
-          ></Image>
-        )}
+        <Fade delay={500}>
+          {isMobile ? (
+            <div></div>
+          ) : (
+            <Image
+              src={myAvatar}
+              alt="PLMTMBNN"
+              className={"background-image"}
+            ></Image>
+          )}
+        </Fade>
       </div>
     </Container>
   );
