@@ -27,16 +27,26 @@ export default function index() {
               <div>
                 <h5
                   style={{
-                    color: "#F97B22"
+                    color: "#EA5455"
                   }}
                 >
-                  <Fade delay={0} cascade damping={1e-1}>
+                  <Fade
+                    delay={0}
+                    cascade
+                    damping={1e-1}
+                    style={{ backgroundColor: "#E4DCCF" }}
+                  >
                     Tech Enthusiast
                   </Fade>
                   <Fade delay={2000} cascade damping={1e-1}>
                     {" | "}
                   </Fade>
-                  <Fade delay={500} cascade damping={1e-1}>
+                  <Fade
+                    delay={500}
+                    cascade
+                    damping={1e-1}
+                    style={{ backgroundColor: "#F6E1C3" }}
+                  >
                     Amateur Runner
                   </Fade>
                 </h5>
@@ -53,7 +63,7 @@ export default function index() {
                       innovation. I also take pleasure in mentoring emerging
                       professionals. In addition to my professional pursuits, I
                       am committed to maintaining a healthy lifestyle by running
-                      20 kilometers every week.
+                      20KM+ a week.
                     </p>
                   </Fade>
                 </Col>
@@ -63,7 +73,7 @@ export default function index() {
                       <Bounce delay={500} cascade>
                         <Link
                           style={{
-                            color: "#7C9070"
+                            color: "#BE3737"
                           }}
                           href="https://www.linkedin.com/in/polma-tambunan/"
                           target="_blank"
@@ -76,7 +86,7 @@ export default function index() {
                       <Bounce delay={1000} cascade>
                         <Link
                           style={{
-                            color: "#7C9070"
+                            color: "#BE3737"
                           }}
                           href="https://www.instagram.com/polmatambunan/"
                           target="_blank"
@@ -89,7 +99,7 @@ export default function index() {
                       <Bounce delay={1500} cascade>
                         <Link
                           style={{
-                            color: "#7C9070"
+                            color: "#BE3737"
                           }}
                           target="_blank"
                           href="mailto:plmtmbnn@gmail.com"

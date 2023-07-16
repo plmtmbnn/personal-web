@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Red+Hat+Display:wght@500&family=Chakra+Petch&family=Dawning+of+a+New+Day&family=Jost:wght@300&family=Lato&family=Roboto&family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Red+Hat+Display:wght@500&family=Chakra+Petch&family=Dawning+of+a+New+Day&family=Jost:wght@300&family=Lato&family=Roboto&family=Instrument+Sans&display=swap');
 
 body {
-    font-family: 'Quattrocento Sans', sans-serif !important;
+    font-family: 'Instrument Sans', sans-serif !important;
     background-color: #ffffff;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .navbar-title:hover {
-    color: #F97B22;
+    color: #BE3737;
 }
 
 .navbar-brand img {
@@ -39,17 +39,13 @@ body {
 }
 
 .nav-link:hover {
-    font-size: large;
-    margin-right: 24px;
-    transition: 0.3s ease;
-    padding: 5px;
-    color: #F97B22;
+    color: #BE3737;
 }
 
 .nav-active a {
     color: black !important;
     font-weight: 600;
-    border-bottom: 4px solid #F97B22;
+    border-bottom: 4px solid #BE3737;
 }
 
 hr.style-two {
@@ -62,12 +58,12 @@ hr.style-two {
     position: fixed;
     top: 10%;
     right: 0;
-    width: 25%;
+    width: 27%;
     height: 90%;
     background-image: url('../public/images/avatar-new.png');
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(1.2) contrast(1.2) saturate(2.3) blur(0) drop-shadow(0 0 0 transparent);
+    filter: brightness(1.1) contrast(2.1) saturate(1.2) blur(0) drop-shadow(0 0 0 transparent);
     image-rendering: crisp-edges;
 }
 

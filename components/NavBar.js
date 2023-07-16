@@ -33,7 +33,7 @@ export default function NavBar({ args }) {
   const NavBarShow = pathname => {
     const activeMenuStyling = targetPath => {
       if (pathname === targetPath) {
-        return { backgroundColor: "#213363", color: "white" };
+        return { color: "#F97B22" };
       } else {
         return {};
       }
