@@ -24,7 +24,7 @@ const Adventures = () => (
   src="https://www.instagram.com/p/DBqBiMYzd4D/embed"
   height='350' width='300'
   scrolling="no"
-  allowtransparency="true">
+  >
 </iframe>
 
       </div>
