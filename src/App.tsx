@@ -5,14 +5,13 @@ import Home from "./components/home";
 import About from "./components/about";
 import Portfolio from "./components/portfolio";
 import Adventures from "./components/adventures";
-import ScrollRedirect from './ScrollRedirect';
 import CustomNavbar from './CustomNavbar';
 
 const App = () => {
   return (
 
     <Router>
-      {/* <ScrollRedirect /> */}
+      {/* <ScrolzlRedirect /> */}
       <CustomNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
