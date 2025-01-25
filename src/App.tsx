@@ -12,7 +12,7 @@ const App = () => {
   return (
 
     <Router>
-      <ScrollRedirect />
+      {/* <ScrollRedirect /> */}
       <CustomNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
