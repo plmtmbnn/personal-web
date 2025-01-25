@@ -36,6 +36,9 @@ importers:
       '@eslint/js':
         specifier: ^9.17.0
         version: 9.19.0
+      '@iconscout/react-unicons-monochrome':
+        specifier: ^1.2.0
+        version: 1.2.0(react@18.3.1)
       '@types/react':
         specifier: ^18.3.18
         version: 18.3.18
@@ -394,6 +397,11 @@ packages:
   '@humanwhocodes/retry@0.4.1':
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
+
+  '@iconscout/react-unicons-monochrome@1.2.0':
+    resolution: {integrity: sha512-fq/CIyLthHBA0lTHl8mL7+cG2J58KvfPOLiW9Z57gYJ8+vdnfpp32ub+nz6+qYhfOgc6CqdlqYMJICz5qEsLaQ==}
+    peerDependencies:
+      react: '>=15.0.0 <17.0.0'
 
   '@jridgewell/gen-mapping@0.3.8':
     resolution: {integrity: sha512-imAbBGkb+ebQyxKgzv5Hu2nmROxoDOXHh80evxdoXNOrvAnVx7zimzc1Oo5h9RlfV4vPXaE2iM5pOFbvOCClWA==}
@@ -2536,6 +2544,10 @@ snapshots:
   '@humanwhocodes/retry@0.3.1': {}
 
   '@humanwhocodes/retry@0.4.1': {}
+
+  '@iconscout/react-unicons-monochrome@1.2.0(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
 
   '@jridgewell/gen-mapping@0.3.8':
     dependencies:

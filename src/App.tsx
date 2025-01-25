@@ -1,36 +1,32 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Blog from "./components/blog";
 import Contact from "./components/contact";
 import Home from "./components/home";
 import About from "./components/about";
 import Portfolio from "./components/portfolio";
 import Adventures from "./components/adventures";
+import ScrollRedirect from './ScrollRedirect';
+import CustomNavbar from './CustomNavbar';
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-100 font-suisse">
+
+    <Router>
+      <CustomNavbar />
+        
+      <ScrollRedirect />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/adventures" element={<Adventures />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       
-      {/* Full-screen pages */}
-      <div className="scroll-smooth">
-        {/* Home Section */}
-        <Home />
-
-        {/* About Me Section */}
-        <About />
-
-        {/* Portfolio Section */}
-        <Portfolio />
-
-        {/* Adventures Section */}
-        <Adventures />
-
-        {/* Blog Section */}
-        <Blog />
-
-        {/* Contact Section */}
-        <Contact />
-
-      </div>
-    </div>
+  
+    </Router>
+ 
   );
 };
 
