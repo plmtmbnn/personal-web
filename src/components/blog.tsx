@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Blog = () => (
 <motion.section
-    id="contact"
+    id="blog"
     className="h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-400 transition-all duration-1000 ease-in-out"
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}

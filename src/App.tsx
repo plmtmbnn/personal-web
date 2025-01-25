@@ -12,9 +12,8 @@ const App = () => {
   return (
 
     <Router>
-      <CustomNavbar />
-        
       <ScrollRedirect />
+      <CustomNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
