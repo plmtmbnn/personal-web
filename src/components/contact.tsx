@@ -1,4 +1,4 @@
-import { JackInTheBox, Slide } from "react-awesome-reveal";
+import { Fade, JackInTheBox, Slide } from "react-awesome-reveal";
 
 const Contact = () => (
   <div
@@ -7,26 +7,28 @@ const Contact = () => (
   >
     <footer className="text-center text-gray-100 max-w-3xl">
       <JackInTheBox delay={200}><h2 className="text-3xl md:text-4xl font-bold mb-6">Contact</h2></JackInTheBox>
-      <Slide direction="left" delay={200}>
-      <p className="text-sm md:text-lg">
-        Reach out via{" "}
-        <a
-          href="mailto:plmtmbnn@gmail.com"
-          className="text-teal-400 underline"
-        >
-          email
-        </a>{" "}
-        or connect on{" "}
-        <a
-          href="https://www.linkedin.com/in/polma-tambunan/"
-          className="text-teal-400 underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>.
-      </p>
-      </Slide>
+      <Fade delay={200}>
+        <Slide direction="up" delay={200}>
+          <p className="text-sm md:text-lg">
+          Reach out via{" "}
+          <a
+            href="mailto:plmtmbnn@gmail.com"
+            className="text-teal-400 underline"
+          >
+            email
+          </a>{" "}
+          or connect on{" "}
+          <a
+            href="https://www.linkedin.com/in/polma-tambunan/"
+            className="text-teal-400 underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>.
+          </p>
+        </Slide>
+      </Fade>
     </footer>
   </div>
 );

@@ -1,4 +1,4 @@
-import { Fade, JackInTheBox, Zoom } from "react-awesome-reveal";
+import { Fade, JackInTheBox, Slide } from "react-awesome-reveal";
 
 const Adventures = () => (
   <div
@@ -11,9 +11,9 @@ const Adventures = () => (
         Adventures
       </h2>
       </JackInTheBox>
-      <Fade>
+      <Fade delay={300}>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <Zoom delay={200}>
+        <Slide direction="up" delay={200}>
         <div className="p-6 bg-white text-gray-900 rounded-lg shadow-lg">
           <h3 className="text-xl md:text-2xl font-semibold mb-2">
             Running Milestone
@@ -21,20 +21,23 @@ const Adventures = () => (
           <p className="text-sm md:text-base leading-relaxed">
             Details about your running achievements.
           </p>
+          <Fade delay={500}>
           <iframe
             className="w-full h-64 md:h-80"
             src="https://www.strava.com/athletes/38682026/activity-summary/84e311c34f606bea25b477bc6aa3e24b84c55e33"
             frameBorder="0"
             allowFullScreen
           ></iframe>
+          </Fade>
         </div>
-        </Zoom>
-        <Zoom delay={500}>
+        </Slide>
+        <Slide direction="up" delay={400}>
         <div className="p-6 bg-white text-gray-900 rounded-lg shadow-lg">
           <h3 className="text-xl md:text-2xl font-semibold mb-2">Photography</h3>
           <p className="text-sm md:text-base leading-relaxed">
             Showcase your best photographs.
           </p>
+          <Fade delay={500}>
           <iframe
             className="w-full h-64 md:h-80"
             src="https://www.instagram.com/p/DBqBiMYzd4D/embed"
@@ -42,8 +45,9 @@ const Adventures = () => (
             frameBorder="0"
             allowFullScreen
           ></iframe>
+          </Fade>
         </div>
-        </Zoom>
+        </Slide>
       </div>
       </Fade>
     </div>

@@ -9,7 +9,7 @@ const Portfolio = () => (
     <JackInTheBox delay={200}><h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-900">
         Portfolio
       </h2></JackInTheBox>
-      <Fade>
+      <Fade delay={200}>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Zoom delay={200}>
         <div className="p-6 bg-white text-gray-900 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">

@@ -1,4 +1,4 @@
-import { JackInTheBox, Slide } from "react-awesome-reveal";
+import { Fade, JackInTheBox, Slide } from "react-awesome-reveal";
 
 const About = () => (
   <div
@@ -11,13 +11,15 @@ const About = () => (
         About Me
       </h2>
       </JackInTheBox>
-      <Slide direction="up" duration={1500}><p className="text-base md:text-lg lg:text-xl text-black leading-relaxed">
-        As a full-time remote software engineer, I specialize in building
-        efficient, scalable applications. When I'm not coding, you can find me
-        running trails, capturing beautiful landscapes, or embarking on new
-        adventures.
-      </p>
-      </Slide>
+      <Fade delay={500}>
+        <Slide direction="up" duration={1500}><p className="text-base md:text-lg lg:text-xl text-black leading-relaxed">
+          As a full-time remote software engineer, I specialize in building
+          efficient, scalable applications. When I'm not coding, you can find me
+          running trails, capturing beautiful landscapes, or embarking on new
+          adventures.
+        </p>
+        </Slide>
+      </Fade>
     </div>
   </div>
 );

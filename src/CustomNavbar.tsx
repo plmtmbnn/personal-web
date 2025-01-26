@@ -1,5 +1,5 @@
 import { useLocation, Link } from "react-router-dom";
-import { Blocks, Flower2, Home, NotebookPenIcon, SmilePlusIcon, User } from "lucide-react";
+import { Flower2, FolderGit2Icon, Home, NotebookPenIcon, TextSearch, User } from "lucide-react";
 
 const FloatingNavbar = () => {
   const location = useLocation();
@@ -26,7 +26,7 @@ const FloatingNavbar = () => {
           to="/portfolio"
           className={`text-xl transition duration-200 text-white `}
         >
-          <Blocks color={`${isActive('/portfolio') ? "#fffcdc" : "#89f7fe"}`} />
+          <FolderGit2Icon color={`${isActive('/portfolio') ? "#fffcdc" : "#89f7fe"}`} />
         </Link>
         <Link
           to="/adventures"
@@ -44,7 +44,7 @@ const FloatingNavbar = () => {
           to="/contact"
           className={`text-xl transition duration-200 text-white `}
         >
-          <SmilePlusIcon color={`${isActive('/contact') ? "#fffcdc" : "#89f7fe"}`} />
+          <TextSearch color={`${isActive('/contact') ? "#fffcdc" : "#89f7fe"}`} />
         </Link>
       </div>
     </nav>
