@@ -1,45 +1,50 @@
+import { useLocation, Link } from "react-router-dom";
 import { Blocks, Flower2, Home, NotebookPenIcon, SmilePlusIcon, User } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const FloatingNavbar = () => {
+  const location = useLocation();
+
+  // Check if the route matches the current location
+  const isActive = (path: string) => location.pathname === path;
+
   return (
     <nav className="fixed bottom-10 right-6 p-4 rounded-full bg-gradient-to-r from-teal-500 via-white-500 to-blue-600 shadow-lg z-50">
       <div className="flex space-x-4">
         <Link
           to="/"
-          className="text-white text-xl hover:black-200 transition duration-200"
+          className={`text-xl transition duration-200 text-white `}
         >
-          <Home />
+          <Home color={`${isActive('/') ? "#fffcdc" : "#89f7fe"}`}/>
         </Link>
         <Link
           to="/about"
-          className="text-white text-xl hover:black-200 transition duration-200"
+          className={`text-xl transition duration-200 text-white `}
         >
-          <User />
+          <User color={`${isActive('/about') ? "#fffcdc" : "#89f7fe"}`} />
         </Link>
         <Link
           to="/portfolio"
-          className="text-white text-xl hover:black-200 transition duration-200"
+          className={`text-xl transition duration-200 text-white `}
         >
-          <Blocks />
+          <Blocks color={`${isActive('/portfolio') ? "#fffcdc" : "#89f7fe"}`} />
         </Link>
         <Link
           to="/adventures"
-          className="text-white text-xl hover:black-200 transition duration-200"
+          className={`text-xl transition duration-200 text-white `}
         >
-          <Flower2 />
+          <Flower2 color={`${isActive('/adventures') ? "#fffcdc" : "#89f7fe"}`} />
         </Link>
         <Link
           to="/blog"
-          className="text-white text-xl hover:black-200 transition duration-200"
+          className={`text-xl transition duration-200 text-white `}
         >
-          <NotebookPenIcon />
+          <NotebookPenIcon color={`${isActive('/blog') ? "#fffcdc" : "#89f7fe"}`} />
         </Link>
         <Link
           to="/contact"
-          className="text-white text-xl hover:black-200 transition duration-200"
+          className={`text-xl transition duration-200 text-white `}
         >
-          <SmilePlusIcon />
+          <SmilePlusIcon color={`${isActive('/contact') ? "#fffcdc" : "#89f7fe"}`} />
         </Link>
       </div>
     </nav>

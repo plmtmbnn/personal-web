@@ -1,23 +1,26 @@
-import { motion } from "framer-motion";
+import { Fade, JackInTheBox, Zoom } from "react-awesome-reveal";
 
 const Blog = () => (
-<motion.section
+  <div
     id="blog"
-    className="h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-400 transition-all duration-1000 ease-in-out"
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    viewport={{ once: true }}
-    transition={{ duration: 1 }}
-  >   
-    <div className="max-w-2xl text-center">
-      <h2 className="text-4xl font-bold mb-4">Blog</h2>
-      <div className="p-6 bg-white text-gray-900 rounded-lg shadow-lg">
-        <h3 className="text-2xl font-semibold mb-2">Blog Post 1</h3>
-        <p>Snippet of an insightful article.</p>
+    className="h-auto min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-400 transition-all duration-1000 ease-in-out p-4"
+  >
+    <div className="max-w-3xl text-center">
+      <JackInTheBox delay={200}>
+      <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900">
+        Blog
+      </h2>
+      </JackInTheBox>
+      <Fade>
+        <Zoom delay={200}>
+      <div className="p-6 bg-white text-gray-900 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <h3 className="text-xl md:text-2xl font-semibold mb-2">Writing</h3>
+        <p className="text-sm md:text-base">No idea yet, sorry.</p>
       </div>
+      </Zoom>
+      </Fade>
     </div>
-  </motion.section>
+  </div>
 );
-
 
 export default Blog;

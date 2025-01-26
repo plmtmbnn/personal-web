@@ -6,13 +6,15 @@ import About from "./components/about";
 import Portfolio from "./components/portfolio";
 import Adventures from "./components/adventures";
 import CustomNavbar from './CustomNavbar';
+import NotFound from './components/not-found';
 
 const App = () => {
   return (
 
     <Router>
-      {/* <ScrolzlRedirect /> */}
       <CustomNavbar />
+
+      {/* <ScrolzlRedirect /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -20,11 +22,9 @@ const App = () => {
         <Route path="/adventures" element={<Adventures />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
-      
-  
     </Router>
- 
   );
 };
 
