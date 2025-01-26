@@ -8,7 +8,7 @@ const FloatingNavbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed bottom-10 right-6 p-4 rounded-full bg-gradient-to-r from-teal-500 via-white-500 to-blue-600 shadow-lg z-50">
+    <nav className="fixed bottom-4 right-2 p-2 rounded-full bg-gradient-to-r from-teal-400 via-white-500 to-blue-600 shadow-lg z-30">
       <div className="flex space-x-4">
         <Link
           to="/"
