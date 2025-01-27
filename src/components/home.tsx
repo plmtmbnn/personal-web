@@ -1,4 +1,4 @@
-import { Fade, Bounce, JackInTheBox } from "react-awesome-reveal";
+import { Fade, JackInTheBox, Slide } from 'react-awesome-reveal';
 
 const duration: number = new Date().getFullYear() - 2018;
 
@@ -26,13 +26,13 @@ const Home = () => (
         </h1>
       </Fade>
       <Fade delay={200}>
-        <Bounce duration={2000}>
+        <Slide direction="down" duration={1500}>
           <p className="text-base md:text-lg lg:text-xl text-gray-700">
-            I love creating amazing apps for {duration} years, running (still
-            half) marathons, capturing moments through photography, and
+          I’ve been crafting amazing apps for {duration} years, running (still
+            half) marathons, capturing life’s moments through photography, and
             exploring (a little part of) the world.
           </p>
-        </Bounce>
+        </Slide>
       </Fade>
     </div>
   </div>

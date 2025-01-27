@@ -1,4 +1,4 @@
-import { Fade, JackInTheBox, Zoom } from "react-awesome-reveal";
+import { Fade, JackInTheBox, Zoom } from 'react-awesome-reveal';
 
 const Blog = () => (
   <div
@@ -7,17 +7,17 @@ const Blog = () => (
   >
     <div className="max-w-3xl text-center">
       <JackInTheBox delay={200}>
-      <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900">
         Blog
-      </h2>
+        </h2>
       </JackInTheBox>
       <Fade>
         <Zoom delay={200}>
-      <div className="p-6 bg-white text-gray-900 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-        <h3 className="text-xl md:text-2xl font-semibold mb-2">Writing</h3>
-        <p className="text-sm md:text-base">No idea yet, sorry.</p>
-      </div>
-      </Zoom>
+          <div className="p-6 bg-white text-gray-900 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+            <h3 className="text-xl md:text-2xl font-semibold mb-2">Writing</h3>
+            <p className="text-sm md:text-base">No ideas to share just yet—stay tuned!</p>
+          </div>
+        </Zoom>
       </Fade>
     </div>
   </div>

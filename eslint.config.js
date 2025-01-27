@@ -23,6 +23,12 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+      "quotes": ["error", "single"], // Enforce single quotes
+      "semi": ["error", "always"], // Enforce semicolons
+      "indent": ["error", 2], // Enforce 2-space indentation
+      "no-mixed-spaces-and-tabs": ["error", "smart-tabs"], // No mixed spaces and tabs
+      "comma-dangle": ["error", "never"], // No dangling commas
+      "no-unused-vars": ["warn"], // Warn on unused variables
     },
   },
 )

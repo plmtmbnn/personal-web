@@ -1,4 +1,4 @@
-import { Fade, JackInTheBox, Slide } from "react-awesome-reveal";
+import { Fade, JackInTheBox, Slide } from 'react-awesome-reveal';
 
 const Contact = () => (
   <div
@@ -10,22 +10,22 @@ const Contact = () => (
       <Fade delay={200}>
         <Slide direction="up" delay={200}>
           <p className="text-sm md:text-lg">
-          Reach out via{" "}
-          <a
-            href="mailto:plmtmbnn@gmail.com"
-            className="text-teal-400 underline"
-          >
+          Reach out via{' '}
+            <a
+              href="mailto:plmtmbnn@gmail.com"
+              className="text-teal-400 underline"
+            >
             email
-          </a>{" "}
-          or connect on{" "}
-          <a
-            href="https://www.linkedin.com/in/polma-tambunan/"
-            className="text-teal-400 underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+            </a>{' '}
+          or connect on{' '}
+            <a
+              href="https://www.linkedin.com/in/polma-tambunan/"
+              className="text-teal-400 underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
             LinkedIn
-          </a>.
+            </a>.
           </p>
         </Slide>
       </Fade>
