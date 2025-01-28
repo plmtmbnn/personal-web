@@ -18,7 +18,7 @@ const Adventures = () => (
             Running Milestone
             </h3>
             <p className="text-sm md:text-base leading-relaxed">
-            Details about your running achievements.
+            Miles logged, progress made.
             </p>
             <Fade delay={200}>
               <iframe
@@ -32,7 +32,7 @@ const Adventures = () => (
           <div className="p-6 bg-white text-gray-900 rounded-lg shadow-lg">
             <h3 className="text-xl md:text-2xl font-semibold mb-2">Photography</h3>
             <p className="text-sm md:text-base leading-relaxed">
-            Showcase your best photographs.
+            Capturing moments, telling stories.
             </p>
             <Fade delay={300}>
               <iframe

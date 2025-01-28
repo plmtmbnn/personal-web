@@ -27,7 +27,7 @@ const Home = () => (
       </Fade>
       <Fade delay={200}>
         <Slide direction="down" duration={1500}>
-          <p className="text-base md:text-lg lg:text-xl text-gray-700">
+          <p className="text-base md:text-lg lg:text-xl text-gray-600">
           I’ve been crafting amazing apps for {duration} years, running (still
             half) marathons, capturing life’s moments through photography, and
             exploring (a little part of) the world.
