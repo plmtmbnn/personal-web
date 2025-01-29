@@ -1,5 +1,6 @@
 import { Fade, JackInTheBox, Slide } from 'react-awesome-reveal';
-import { FiCamera, FiActivity } from 'react-icons/fi';
+import { FiCamera } from 'react-icons/fi';
+import { GrDeploy } from 'react-icons/gr';
 import { LiaRunningSolid } from 'react-icons/lia';
 import { MdExplore } from 'react-icons/md';
 
@@ -41,7 +42,7 @@ const Home = () => (
         <Slide direction="up" duration={1000} triggerOnce>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
             <div className="p-4 bg-white bg-opacity-50 rounded-lg backdrop-blur-sm hover:bg-opacity-70 transition-all">
-              <FiActivity className="w-8 h-8 mb-2 mx-auto text-blue-600" />
+              <GrDeploy className="w-8 h-8 mb-2 mx-auto text-blue-600" />
               <p className="font-semibold">{duration}+ Years</p>
               <p className="text-sm">Development</p>
             </div>

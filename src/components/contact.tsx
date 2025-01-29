@@ -6,12 +6,12 @@ const Contact = () => (
     className="h-auto min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-800 to-gray-900 p-8 dark:bg-gradient-to-r dark:from-gray-900 dark:to-black"
   >
     <div className="text-center text-white max-w-3xl mx-auto space-y-6">
-      <JackInTheBox delay={200}>
+      <JackInTheBox delay={200} triggerOnce>
         <h2 className="text-4xl md:text-5xl font-semibold mb-4">Let’s Connect!</h2>
       </JackInTheBox>
 
-      <Fade delay={300}>
-        <Slide direction="up" delay={300}>
+      <Fade delay={300} triggerOnce>
+        <Slide direction="up" delay={300} triggerOnce>
           <p className="text-lg text-gray-200 dark:text-gray-300">
             Reach out via{' '}
             <a
@@ -33,8 +33,8 @@ const Contact = () => (
         </Slide>
       </Fade>
 
-      <Fade delay={400}>
-        <Slide direction="up" delay={400}>
+      <Fade delay={400} triggerOnce>
+        <Slide direction="up" delay={400} triggerOnce>
           <p className="text-sm text-gray-300 dark:text-gray-500">Looking forward to connecting!</p>
         </Slide>
       </Fade>
