@@ -7,7 +7,12 @@ import { Chart as ChartJS, Title, Tooltip, Legend, ArcElement, CategoryScale } f
 
 ChartJS.register(Title, Tooltip, Legend, ArcElement, CategoryScale);
 
-const ToggleIndicator = ({ isCollapsed, onClick }) => (
+interface ToggleIndicatorProps {
+  isCollapsed: boolean;
+  onClick: () => void;
+}
+
+const ToggleIndicator: React.FC<ToggleIndicatorProps> = ({ isCollapsed, onClick }) => (
   <div className="ml-auto text-lg cursor-pointer" onClick={onClick}>
     {isCollapsed ? <MdKeyboardDoubleArrowDown /> : <MdKeyboardDoubleArrowUp />}
   </div>
@@ -45,7 +50,7 @@ const Portfolio = () => {
       },
       tooltip: {
         callbacks: {
-          label: (context) => `${context.label}: ${context.raw}%`
+          label: (context: { label: any; raw: any; }) => `${context.label}: ${context.raw}%`
         },
         bodyFont: {
           size: 14 // Increased font size for tooltip
@@ -73,7 +78,7 @@ const Portfolio = () => {
           <div className="w-full lg:w-1/4"> {/* Adjusted width for better responsiveness */}
             <Zoom>
               <div className="bg-white rounded-lg shadow-lg p-6"> {/* Added card styling */}
-                <Pie data={data} options={options} />
+                <Pie data={data} options={{...options as any}} />
               </div>
             </Zoom>
           </div>
