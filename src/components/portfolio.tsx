@@ -2,6 +2,12 @@ import { ArrowDown, ArrowUp } from 'lucide-react';
 import { useState } from 'react';
 import { Zoom, Fade, JackInTheBox } from 'react-awesome-reveal';
 
+const ToggleIndicator = ({ isCollapsed, onClick }: { isCollapsed: boolean; onClick: () => void }) => (
+  <div className="ml-auto text-sm cursor-pointer" onClick={onClick}>
+    {isCollapsed ? <ArrowDown /> : <ArrowUp />}
+  </div>
+);
+
 const Portfolio = () => {
   const [isCollapsedLOS, setIsCollapsedLOS] = useState(true); // State for LOS section
   const [isCollapsedOther, setIsCollapsedOther] = useState(true); // State for Other Projects section
@@ -21,7 +27,7 @@ const Portfolio = () => {
     >
       <div className="max-w-6xl w-full">
         <JackInTheBox delay={200}>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-gray-900 tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-900">
             Portfolio
           </h2>
         </JackInTheBox>
@@ -30,16 +36,13 @@ const Portfolio = () => {
           <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
             {/* Collapsible 80% Section */}
             <Zoom delay={200}>
-              <div className="p-14 bg-gradient-to-r from-blue-600 to-blue-400 text-white rounded-md shadow-xl hover:shadow-2xl transition duration-300 border-l-8 border-blue-800">
+              <div className="p-4 md:p-14 bg-gradient-to-r from-blue-600 to-blue-400 text-white rounded-md shadow-xl hover:shadow-2xl transition duration-300 border-l-8 border-blue-800">
                 <h3
                   className="text-3xl font-bold cursor-pointer flex items-center"
                   onClick={toggleCollapseLOS}
                 >
                   <span>80% - LOS & LMS Core Systems</span>
-                  {/* Toggle Indicator */}
-                  <div className="ml-auto text-sm cursor-pointer">
-                    {isCollapsedLOS ? <ArrowDown /> : <ArrowUp />}
-                  </div>
+                  <ToggleIndicator isCollapsed={isCollapsedLOS} onClick={toggleCollapseLOS} />
                 </h3>
 
                 {/* Collapsible Content */}
@@ -64,16 +67,13 @@ const Portfolio = () => {
 
             {/* Collapsible 20% Section */}
             <Zoom delay={500}>
-              <div className="p-3 bg-white text-gray-900 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 border-l-4 border-gray-800">
+              <div className="p-4 md:p-8 bg-white text-gray-900 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 border-l-4 border-gray-800">
                 <h3
                   className="text-md font-bold cursor-pointer flex items-center"
                   onClick={toggleCollapseOther}
                 >
                   <span>20% - Other Notable Projects</span>
-                  {/* Toggle Indicator */}
-                  <div className="ml-auto text-sm cursor-pointer">
-                    {isCollapsedOther ? <ArrowDown /> : <ArrowUp />}
-                  </div>
+                  <ToggleIndicator isCollapsed={isCollapsedOther} onClick={toggleCollapseOther} />
                 </h3>
 
                 {/* Collapsible Content */}
@@ -112,3 +112,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
