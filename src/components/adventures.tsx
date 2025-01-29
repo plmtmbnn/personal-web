@@ -12,9 +12,9 @@ const Adventures = () => (
         </h2>
       </JackInTheBox>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <Fade direction="down" delay={500} duration={1500}>
-          <div className="p-6 bg-white text-gray-900 rounded-lg shadow-lg">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <Fade direction="down" delay={200} duration={1500}>
+          <div className="p-4 bg-white text-gray-900 rounded-lg shadow-lg">
             <h3 className="text-xl md:text-2xl font-semibold mb-2">Running Milestone</h3>
             <p className="text-sm md:text-base leading-relaxed">
               Miles logged, progress made.
@@ -28,8 +28,8 @@ const Adventures = () => (
           </div>
         </Fade>
 
-        <Fade direction="down" delay={300} duration={1500}>
-          <div className="p-6 bg-white text-gray-900 rounded-lg shadow-lg">
+        <Fade direction="down" delay={500} duration={1500}>
+          <div className="p-4 bg-white text-gray-900 rounded-lg shadow-lg">
             <h3 className="text-xl md:text-2xl font-semibold mb-2">Photography</h3>
             <p className="text-sm md:text-base leading-relaxed">
               Capturing moments, telling stories.

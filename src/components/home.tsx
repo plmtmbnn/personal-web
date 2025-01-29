@@ -38,7 +38,7 @@ const Home = () => (
           Polma Tambunan
         </h1>
         
-        <Slide direction="up" duration={800} triggerOnce>
+        <Slide direction="up" duration={1000} triggerOnce>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
             <div className="p-4 bg-white bg-opacity-50 rounded-lg backdrop-blur-sm hover:bg-opacity-70 transition-all">
               <FiActivity className="w-8 h-8 mb-2 mx-auto text-blue-600" />
@@ -66,10 +66,12 @@ const Home = () => (
           </div>
         </Slide>
 
-        <p className="text-md md:text-md text-gray-600 mt-8 max-w-xl mx-auto leading-relaxed">
+        <Slide direction='down' delay={200} duration={1000} triggerOnce>
+          <p className="text-md md:text-md text-gray-600 mt-8 max-w-xl mx-auto leading-relaxed">
           Crafting digital experiences by day, capturing life's moments by lens, 
           and chasing horizons one marathon at a time.
-        </p>
+          </p>
+        </Slide>
       </Fade>
     </div>
 
