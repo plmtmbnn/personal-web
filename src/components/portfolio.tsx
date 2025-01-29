@@ -1,10 +1,10 @@
-import { ArrowDown, ArrowUp } from 'lucide-react';
 import { useState } from 'react';
 import { Zoom, Fade, JackInTheBox } from 'react-awesome-reveal';
+import { MdKeyboardDoubleArrowDown, MdKeyboardDoubleArrowUp } from 'react-icons/md';
 
 const ToggleIndicator = ({ isCollapsed, onClick }: { isCollapsed: boolean; onClick: () => void }) => (
   <div className="ml-auto text-sm cursor-pointer" onClick={onClick}>
-    {isCollapsed ? <ArrowDown /> : <ArrowUp />}
+    {isCollapsed ? <MdKeyboardDoubleArrowDown /> : <MdKeyboardDoubleArrowUp />}
   </div>
 );
 

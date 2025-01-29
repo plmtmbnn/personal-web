@@ -1,5 +1,8 @@
 import { useLocation, Link } from 'react-router-dom';
-import { Flower2, FolderGit2Icon, Home, NotebookPenIcon, Send, User } from 'lucide-react';
+import { TbActivityHeartbeat, TbHomeHeart } from 'react-icons/tb';
+import { FaRegAddressCard, FaUserNinja } from 'react-icons/fa';
+import { GrDeploy } from 'react-icons/gr';
+import { PiArticleNyTimesLight } from 'react-icons/pi';
 
 const FloatingNavbar = () => {
   const location = useLocation();
@@ -14,37 +17,37 @@ const FloatingNavbar = () => {
           to="/"
           className={'text-xl transition duration-200 text-white'}
         >
-          <Home color={`${isActive('/') ? '#fffcdc' : '#89f7fe'}`}/>
+          <TbHomeHeart color={`${isActive('/') ? '#fffcdc' : '#89f7fe'}`}/>
         </Link>
         <Link
           to="/about"
           className={'text-xl transition duration-200 text-white'}
         >
-          <User color={`${isActive('/about') ? '#fffcdc' : '#89f7fe'}`} />
+          <FaUserNinja color={`${isActive('/about') ? '#fffcdc' : '#89f7fe'}`} />
         </Link>
         <Link
           to="/portfolio"
           className={'text-xl transition duration-200 text-white'}
         >
-          <FolderGit2Icon color={`${isActive('/portfolio') ? '#fffcdc' : '#89f7fe'}`} />
+          <GrDeploy color={`${isActive('/portfolio') ? '#fffcdc' : '#89f7fe'}`} />
         </Link>
         <Link
           to="/adventures"
           className={'text-xl transition duration-200 text-white'}
         >
-          <Flower2 color={`${isActive('/adventures') ? '#fffcdc' : '#89f7fe'}`} />
+          <TbActivityHeartbeat color={`${isActive('/adventures') ? '#fffcdc' : '#89f7fe'}`} />
         </Link>
         <Link
           to="/blog"
           className={'text-xl transition duration-200 text-white'}
         >
-          <NotebookPenIcon color={`${isActive('/blog') ? '#fffcdc' : '#89f7fe'}`} />
+          <PiArticleNyTimesLight   color={`${isActive('/blog') ? '#fffcdc' : '#89f7fe'}`} />
         </Link>
         <Link
           to="/contact"
           className={'text-xl transition duration-200 text-white'}
         >
-          <Send color={`${isActive('/contact') ? '#fffcdc' : '#89f7fe'}`} />
+          <FaRegAddressCard  color={`${isActive('/contact') ? '#fffcdc' : '#89f7fe'}`} />
         </Link>
       </div>
     </nav>

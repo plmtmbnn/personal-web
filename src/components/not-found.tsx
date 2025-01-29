@@ -1,5 +1,4 @@
-// src/pages/NotFound.tsx
-import { Home } from 'lucide-react';
+import { MdResetTv } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 const NotFound = () => {
@@ -11,7 +10,7 @@ const NotFound = () => {
         to="/"
         className="px-6 py-3 text-white bg-gradient-to-r from-green-400 to-teal-500 rounded-lg shadow-md hover:shadow-lg transition-all duration-200"
       >
-        <Home />
+        <MdResetTv />
       </Link>
     </div>
   );
