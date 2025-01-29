@@ -11,43 +11,43 @@ const FloatingNavbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed bottom-4 right-4 p-3 rounded-full bg-gradient-to-r from-teal-300 via-white-500 to-blue-600 shadow-lg z-15">
-      <div className="flex space-x-4">
+    <nav className="fixed bottom-6 right-6 p-4 rounded-full bg-white shadow-md z-50">
+      <div className="flex space-x-6">
         <Link
           to="/"
-          className={'text-xl transition duration-200 text-white'}
+          className={`text-xl transition-all duration-200 ${isActive('/') ? 'text-blue-600' : 'text-gray-600'}`}
         >
-          <TbHomeHeart color={`${isActive('/') ? '#fffcdc' : '#89f7fe'}`}/>
+          <TbHomeHeart size={24} />
         </Link>
         <Link
           to="/about"
-          className={'text-xl transition duration-200 text-white'}
+          className={`text-xl transition-all duration-200 ${isActive('/about') ? 'text-blue-600' : 'text-gray-600'}`}
         >
-          <FaUserNinja color={`${isActive('/about') ? '#fffcdc' : '#89f7fe'}`} />
+          <FaUserNinja size={24} />
         </Link>
         <Link
           to="/portfolio"
-          className={'text-xl transition duration-200 text-white'}
+          className={`text-xl transition-all duration-200 ${isActive('/portfolio') ? 'text-blue-600' : 'text-gray-600'}`}
         >
-          <GrDeploy color={`${isActive('/portfolio') ? '#fffcdc' : '#89f7fe'}`} />
+          <GrDeploy size={24} />
         </Link>
         <Link
           to="/adventures"
-          className={'text-xl transition duration-200 text-white'}
+          className={`text-xl transition-all duration-200 ${isActive('/adventures') ? 'text-blue-600' : 'text-gray-600'}`}
         >
-          <TbActivityHeartbeat color={`${isActive('/adventures') ? '#fffcdc' : '#89f7fe'}`} />
+          <TbActivityHeartbeat size={24} />
         </Link>
         <Link
           to="/blog"
-          className={'text-xl transition duration-200 text-white'}
+          className={`text-xl transition-all duration-200 ${isActive('/blog') ? 'text-blue-600' : 'text-gray-600'}`}
         >
-          <PiArticleNyTimesLight   color={`${isActive('/blog') ? '#fffcdc' : '#89f7fe'}`} />
+          <PiArticleNyTimesLight size={24} />
         </Link>
         <Link
           to="/contact"
-          className={'text-xl transition duration-200 text-white'}
+          className={`text-xl transition-all duration-200 ${isActive('/contact') ? 'text-blue-600' : 'text-gray-600'}`}
         >
-          <FaRegAddressCard  color={`${isActive('/contact') ? '#fffcdc' : '#89f7fe'}`} />
+          <FaRegAddressCard size={24} />
         </Link>
       </div>
     </nav>

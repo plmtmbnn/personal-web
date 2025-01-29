@@ -1,5 +1,17 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
+@media (prefers-reduced-motion: reduce) {
+  [class*="transform"], 
+  [class*="animation"] {
+    transform: none !important;
+    animation: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    [class*="transform"], 
+    [class*="animation"] {
+      transform: none !important;
+      animation: none !important;
+    }
+  }

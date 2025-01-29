@@ -1,0 +1,17 @@
+{
+    "tasks": {
+      "build": {
+        "dependsOn": ["^build"]
+      },
+      "tsc": {
+        "inputs": ["src/**/*"],
+        "outputs": ["dist/**"]
+      },
+      "vite:build": {
+        "dependsOn": ["tsc"],
+        "inputs": ["src/**/*"],
+        "outputs": ["dist/**"]
+      }
+    }
+  }
+  

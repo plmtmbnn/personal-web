@@ -1,8 +1,9 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
-import tseslint from 'typescript-eslint'
+import js from '@eslint/js';
+import globals from 'globals';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
+import tseslint from 'typescript-eslint';
+import unusedImports from 'eslint-plugin-unused-imports'; // Added for unused imports
 
 export default tseslint.config(
   { ignores: ['dist'] },
@@ -16,6 +17,7 @@ export default tseslint.config(
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      'unused-imports': unusedImports, // Added plugin for unused imports
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
@@ -28,7 +30,9 @@ export default tseslint.config(
       "indent": ["error", 2], // Enforce 2-space indentation
       "no-mixed-spaces-and-tabs": ["error", "smart-tabs"], // No mixed spaces and tabs
       "comma-dangle": ["error", "never"], // No dangling commas
-      "no-unused-vars": ["warn"], // Warn on unused variables
+      "no-unused-vars": ["warn", { "args": "none", "ignoreRestSiblings": true }], // Warn on unused variables
+      "unused-imports/no-unused-imports": "warn", // Automatically remove unused imports
+      "unused-imports/no-unused-vars": ["warn", { "vars": "all", "args": "after-used" }] // Automatically remove unused variables
     },
   },
-)
+);
