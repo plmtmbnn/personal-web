@@ -69,8 +69,7 @@ const Home = () => (
 
         <Slide direction='down' delay={200} duration={1000} triggerOnce>
           <p className="text-md md:text-md text-gray-600 mt-8 max-w-xl mx-auto leading-relaxed">
-          Crafting digital experiences by day, capturing life's moments by lens, 
-          and chasing horizons one marathon at a time.
+          Building seamless digital solutions, capturing landscapes through my lens, and exploring new horizons on the run.
           </p>
         </Slide>
       </Fade>

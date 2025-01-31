@@ -2,13 +2,15 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import Inspect from 'vite-plugin-inspect';
+import viteCompression from 'vite-plugin-compression';
 
 export default defineConfig({
   base: '/',
   plugins: [
     react(),
     tailwindcss(),
-    Inspect()
+    Inspect(),
+    viteCompression()
   ],
   server: {
     open: true

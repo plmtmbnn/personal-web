@@ -20,10 +20,20 @@ const Adventures = () => (
               Miles logged, progress made.
             </p>
             <Fade delay={200}>
-              <iframe
-                className="w-full h-45 md:h-45"
-                src="https://www.strava.com/athletes/38682026/activity-summary/84e311c34f606bea25b477bc6aa3e24b84c55e33"
-              />
+              <a
+                href="https://www.strava.com/athletes/38682026/activity-summary/84e311c34f606bea25b477bc6aa3e24b84c55e33"
+                target='_blank'
+              >
+                <iframe
+                  
+                  scrolling="no"
+                  frameBorder="0"
+                  allowFullScreen
+                  className="w-full h-45 md:h-45"
+                  src="https://www.strava.com/athletes/38682026/activity-summary/84e311c34f606bea25b477bc6aa3e24b84c55e33"
+                />
+              </a>
+
             </Fade>
           </div>
         </Fade>
@@ -35,13 +45,15 @@ const Adventures = () => (
               Capturing moments, telling stories.
             </p>
             <Fade delay={300}>
-              <iframe
-                className="w-full h-64 md:h-90"
-                src="https://www.instagram.com/p/DBqBiMYzd4D/embed"
-                scrolling="no"
-                frameBorder="0"
-                allowFullScreen
-              />
+              <a href="https://www.instagram.com/p/DBqBiMYzd4D/embed" target="_blank">
+                <iframe
+                  className="w-full h-64 md:h-90"
+                  src="https://www.instagram.com/p/DBqBiMYzd4D/embed"
+                  scrolling="no"
+                  frameBorder="0"
+                  allowFullScreen
+                />
+              </a>
             </Fade>
           </div>
         </Fade>
