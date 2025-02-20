@@ -4,6 +4,8 @@ import { FaNode, FaDocker, FaReact, FaCameraRetro } from 'react-icons/fa'; // Te
 import { FaRunning, FaFutbol } from 'react-icons/fa'; // Hobby and more icons
 import { MdOutlineModeOfTravel } from 'react-icons/md';
 
+const duration: number = new Date().getFullYear() - 2018;
+
 const About = () => (
   <div
     id="about"
@@ -22,7 +24,7 @@ const About = () => (
             <div className="p-6 bg-white text-gray-900 rounded-lg shadow-lg">
               <h3 className="text-lg font-bold text-gray-800">Professional Role</h3>
               <p className="text-base text-gray-700">
-                I’m a remote software engineer specializing in efficient, scalable applications. With 7+ years of experience, I focus on building reliable systems that provide seamless user experiences.
+                I’m a remote software engineer specializing in efficient, scalable applications. With {duration}+ years of experience, I focus on building reliable systems that provide seamless user experiences.
               </p>
               <div className="flex justify-center gap-6 mt-4">
                 <FaNode size={25} className="text-green-500" title="Node.js" />

@@ -30,7 +30,7 @@ const Home = () => (
     <div className="text-center max-w-xl relative z-10 space-y-8">
       <JackInTheBox delay={200} triggerOnce>
         <div className="inline-block animate-float">
-          <span className="text-5xl md:text-6xl">🌎</span>
+          <span className="text-5xl md:text-6xl drop-shadow-lg">🌎</span>
         </div>
       </JackInTheBox>
 
@@ -40,26 +40,26 @@ const Home = () => (
         </h1>
         
         <Slide direction="up" duration={1000} triggerOnce>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
-            <div className="p-4 bg-white bg-opacity-50 rounded-lg backdrop-blur-sm hover:bg-opacity-70 transition-all">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+            <div className="p-4 bg-white bg-opacity-50 rounded-lg backdrop-blur-sm hover:bg-opacity-70 transition-transform transform hover:scale-105">
               <GrDeploy className="w-8 h-8 mb-2 mx-auto text-blue-600" />
               <p className="font-semibold">{duration}+ Years</p>
               <p className="text-sm">Development</p>
             </div>
             
-            <div className="p-4 bg-white bg-opacity-50 rounded-lg backdrop-blur-sm hover:bg-opacity-70 transition-all">
+            <div className="p-4 bg-white bg-opacity-50 rounded-lg backdrop-blur-sm hover:bg-opacity-70 transition-transform transform hover:scale-105">
               <LiaRunningSolid className="w-8 h-8 mb-2 mx-auto text-green-500" />
               <p className="font-semibold">1000+ KM</p>
               <p className="text-sm">Running per year</p>
             </div>
             
-            <div className="p-4 bg-white bg-opacity-50 rounded-lg backdrop-blur-sm hover:bg-opacity-70 transition-all">
+            <div className="p-4 bg-white bg-opacity-50 rounded-lg backdrop-blur-sm hover:bg-opacity-70 transition-transform transform hover:scale-105">
               <FiCamera className="w-8 h-8 mb-2 mx-auto text-purple-500" />
               <p className="font-semibold">Photography</p>
               <p className="text-sm">Passion</p>
             </div>
             
-            <div className="p-4 bg-white bg-opacity-50 rounded-lg backdrop-blur-sm hover:bg-opacity-70 transition-all">
+            <div className="p-4 bg-white bg-opacity-50 rounded-lg backdrop-blur-sm hover:bg-opacity-70 transition-transform transform hover:scale-105">
               <MdExplore className="w-8 h-8 mb-2 mx-auto text-orange-500" />
               <p className="font-semibold">Love</p>
               <p className="text-sm">Exploration</p>
@@ -67,9 +67,9 @@ const Home = () => (
           </div>
         </Slide>
 
-        <Slide direction='down' delay={200} duration={1000} triggerOnce>
-          <p className="text-md md:text-md text-gray-600 mt-8 max-w-xl mx-auto leading-relaxed">
-          Building seamless digital solutions, capturing landscapes through my lens, and exploring new horizons on the run.
+        <Slide direction="down" delay={200} duration={1000} triggerOnce>
+          <p className="text-md text-gray-600 mt-8 max-w-xl mx-auto leading-relaxed">
+            Building seamless digital solutions, capturing landscapes through my lens, and exploring new horizons on the run.
           </p>
         </Slide>
       </Fade>
