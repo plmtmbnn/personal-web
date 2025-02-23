@@ -2,7 +2,6 @@ import { Fade, JackInTheBox, Slide } from 'react-awesome-reveal';
 import { FiCamera } from 'react-icons/fi';
 import { GrDeploy } from 'react-icons/gr';
 import { LiaRunningSolid } from 'react-icons/lia';
-import { MdExplore } from 'react-icons/md';
 
 const duration: number = new Date().getFullYear() - 2018;
 
@@ -40,7 +39,7 @@ const Home = () => (
         </h1>
         
         <Slide direction="up" duration={1000} triggerOnce>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mt-3">
             <div className="p-4 bg-white bg-opacity-50 rounded-lg backdrop-blur-sm hover:bg-opacity-70 transition-transform transform hover:scale-105">
               <GrDeploy className="w-8 h-8 mb-2 mx-auto text-blue-600" />
               <p className="font-semibold">{duration}+ Years</p>
@@ -55,21 +54,15 @@ const Home = () => (
             
             <div className="p-4 bg-white bg-opacity-50 rounded-lg backdrop-blur-sm hover:bg-opacity-70 transition-transform transform hover:scale-105">
               <FiCamera className="w-8 h-8 mb-2 mx-auto text-purple-500" />
-              <p className="font-semibold">Photography</p>
-              <p className="text-sm">Passion</p>
-            </div>
-            
-            <div className="p-4 bg-white bg-opacity-50 rounded-lg backdrop-blur-sm hover:bg-opacity-70 transition-transform transform hover:scale-105">
-              <MdExplore className="w-8 h-8 mb-2 mx-auto text-orange-500" />
-              <p className="font-semibold">Love</p>
-              <p className="text-sm">Exploration</p>
+              <p className="font-semibold">Capture</p>
+              <p className="text-sm">Photography</p>
             </div>
           </div>
         </Slide>
 
         <Slide direction="down" delay={200} duration={1000} triggerOnce>
           <p className="text-md text-gray-600 mt-8 max-w-xl mx-auto leading-relaxed">
-            Building seamless digital solutions, capturing landscapes through my lens, and exploring new horizons on the run.
+            Building financial lending core systems—engineer by day since 2018, runner in my spare time.
           </p>
         </Slide>
       </Fade>

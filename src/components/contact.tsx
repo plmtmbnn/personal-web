@@ -2,62 +2,64 @@ import { Fade, JackInTheBox, Slide } from 'react-awesome-reveal';
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Contact = () => (
-  <div
+  <section
     id="contact"
-    className="h-auto min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-800 to-gray-900 p-8 dark:bg-gradient-to-r dark:from-gray-900 dark:to-black"
+    className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 p-6 transition-all duration-1000 ease-in-out"
   >
-    <div className="text-center text-white max-w-3xl mx-auto space-y-8">
-      <JackInTheBox delay={200} triggerOnce>
-        <h2 className="text-4xl md:text-5xl font-semibold mb-4">Let’s Connect!</h2>
+    <div className="text-center text-gray-900 max-w-3xl mx-auto space-y-8">
+      {/* Heading */}
+      <JackInTheBox triggerOnce>
+        <h2 className="text-4xl md:text-5xl font-semibold">Let’s Connect!</h2>
       </JackInTheBox>
 
-      <Fade delay={300} triggerOnce>
-        <Slide direction="up" delay={300} triggerOnce>
-          <p className="text-lg text-gray-200 dark:text-gray-300">
-            Feel free to reach out through email or social media!
-          </p>
-        </Slide>
+      {/* Subtitle */}
+      <Fade delay={200} triggerOnce>
+        <p className="text-lg text-gray-700 dark:text-gray-800">
+          Feel free to reach out via email or social media!
+        </p>
       </Fade>
 
-      {/* Contact Options */}
-      <Fade delay={400} triggerOnce>
-        <Slide direction="up" delay={400} triggerOnce>
-          <div className="flex flex-wrap justify-center gap-6">
-            <a
-              href="mailto:plmtmbnn@gmail.com"
-              className="flex items-center gap-2 text-teal-300 hover:text-teal-400 font-medium transition-colors duration-300 dark:text-teal-400 dark:hover:text-teal-500"
-            >
-              <FaEnvelope size={22} /> Email
-            </a>
-            <a
-              href="https://www.linkedin.com/in/polma-tambunan/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-teal-300 hover:text-teal-400 font-medium transition-colors duration-300 dark:text-teal-400 dark:hover:text-teal-500"
-            >
-              <FaLinkedin size={22} /> LinkedIn
-            </a>
-            <a
-              href="https://github.com/plmtmbnn"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-teal-300 hover:text-teal-400 font-medium transition-colors duration-300 dark:text-teal-400 dark:hover:text-teal-500"
-            >
-              <FaGithub size={22} /> GitHub
-            </a>
+      {/* Contact Links */}
+      <Fade delay={300} triggerOnce>
+        <Slide direction="up" triggerOnce>
+          <div className="flex flex-wrap justify-center gap-6 mt-4">
+            {contactLinks.map(({ href, label, Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Visit my ${label}`}
+                className="flex items-center gap-2 text-blue-300 hover:text-blue-400 font-medium transition-colors duration-300 dark:text-blue-400 dark:hover:text-blue-500"
+              >
+                <Icon size={22} /> {label}
+              </a>
+            ))}
           </div>
         </Slide>
       </Fade>
 
-      <Fade delay={500} triggerOnce>
-        <Slide direction="up" delay={500} triggerOnce>
-          <p className="text-sm text-gray-400 dark:text-gray-500">
-            Looking forward to connecting!
-          </p>
-        </Slide>
-      </Fade>
     </div>
-  </div>
+  </section>
 );
 
 export default Contact;
+
+// Contact Links Data
+const contactLinks = [
+  {
+    href: 'mailto:plmtmbnn@gmail.com',
+    label: 'Email',
+    Icon: FaEnvelope
+  },
+  {
+    href: 'https://www.linkedin.com/in/polma-tambunan/',
+    label: 'LinkedIn',
+    Icon: FaLinkedin
+  },
+  {
+    href: 'https://github.com/plmtmbnn',
+    label: 'GitHub',
+    Icon: FaGithub
+  }
+];
