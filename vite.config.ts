@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import Inspect from 'vite-plugin-inspect';
 import viteCompression from 'vite-plugin-compression';
+import { imagetools } from 'vite-imagetools';
 
 export default defineConfig({
   base: '/',
@@ -10,7 +11,8 @@ export default defineConfig({
     react(),
     tailwindcss(),
     Inspect(),
-    viteCompression()
+    viteCompression(),
+    imagetools()
   ],
   server: {
     open: true
