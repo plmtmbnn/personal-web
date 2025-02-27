@@ -8,8 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Manrope", ...defaultTheme.fontFamily.sans],
-        heading: ["Manrope", "Arial", "sans-serif"], // New heading stack
+        nohemi: ["Nohemi", "sans-serif"],
       },
       backgroundImage: {
         "pattern-cross":
