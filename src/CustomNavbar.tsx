@@ -15,28 +15,27 @@ const navItems = [
 
 const FloatingNavbar = () => {
   const location = useLocation();
-  const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed bottom-4 right-4 p-1 rounded-full backdrop-blur-md bg-white/50 shadow-xl z-50 border border-gray-200">
-      <div className="flex space-x-1">
-        {navItems.map(({ to, icon: Icon, label }) => (
+    <nav className="fixed bottom-6 left-1/2 -translate-x-1/2 flex gap-1 bg-white/80 backdrop-blur-md p-2 rounded-full z-50">
+      {navItems.map(({ to, icon: Icon, label }) => {
+        const isActive = location.pathname === to;
+        return (
           <Link
             key={to}
             to={to}
             aria-label={label}
-            aria-current={isActive(to) ? 'page' : undefined}
-            className={`relative flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 
+            className={`group relative flex items-center justify-center w-10 h-10 rounded-full transition-all duration-300
               ${
-          isActive(to)
-            ? 'bg-blue-500 text-white shadow-lg scale-110'
-            : 'text-gray-600 hover:text-blue-600 hover:scale-110'
+          isActive
+            ? 'bg-blue-500 text-white'
+            : 'text-gray-700 hover:text-blue-400 hover:bg-text-blue-400/50'
           }`}
           >
-            <Icon size={24} />
+            <Icon size={20} />
           </Link>
-        ))}
-      </div>
+        );
+      })}
     </nav>
   );
 };
