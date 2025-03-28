@@ -8,74 +8,93 @@ const duration: number = new Date().getFullYear() - 2018;
 const Home = () => (
   <div
     id="home"
-    className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-white to-blue-50 px-6 overflow-hidden"
+    className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 px-2 sm:px-6 overflow-hidden"
   >
-    {/* Soft Animated Background Elements */}
-    <div className="absolute inset-0 flex flex-wrap opacity-5">
+    {/* Mobile-Optimized Background */}
+    <div className="absolute inset-0 opacity-10">
       {[...Array(15)].map((_, i) => (
         <div
           key={i}
-          className="w-4 h-4 bg-blue-300 rounded-full"
+          className="absolute w-2 h-2 sm:w-3 sm:h-3 bg-blue-100/20 rounded-full"
           style={{
-            position: 'absolute',
             top: `${Math.random() * 100}%`,
             left: `${Math.random() * 100}%`,
-            animation: `float 15s infinite ease-in-out ${i * 0.3}s`
+            animation: `float 20s infinite cubic-bezier(0.4, 0, 0.6, 1) ${i * 0.5}s`
           }}
         />
       ))}
     </div>
 
-    {/* Main Content */}
-    <div className="text-center max-w-2xl relative z-10">
+    {/* Responsive Content Container */}
+    <div className="text-center w-full max-w-2xl relative z-10 space-y-6 sm:space-y-8 px-2">
       <JackInTheBox delay={200} triggerOnce>
-        <div className="inline-block animate-bounce">
-          <span className="text-6xl drop-shadow-md">🚀</span>
+        <div className="inline-block animate-soft-bounce">
+          <span className="text-4xl sm:text-5xl">🌏</span>
         </div>
       </JackInTheBox>
 
-      <Fade delay={400} cascade damping={0.2} triggerOnce>
-        <h1 className="text-5xl font-extrabold tracking-wide bg-gradient-to-r from-blue-700 to-teal-500 bg-clip-text text-transparent">
-          Polma Tambunan
-        </h1>
+      <Fade delay={300} cascade damping={0.1} triggerOnce>
+        <div className="space-y-4 sm:space-y-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-sky-600 to-teal-400 bg-clip-text text-transparent px-2">
+            Polma Tambunan
+          </h1>
 
-        <Slide direction="up" duration={1000} triggerOnce>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6">
-            <div className="p-6 bg-white/50 shadow-md rounded-xl backdrop-blur-lg hover:shadow-lg transform transition-transform hover:scale-105">
-              <GrDeploy className="w-10 h-10 mb-2 mx-auto text-blue-700" />
-              <p className="font-semibold text-lg">{duration}+ Years</p>
-              <p className="text-sm text-gray-600">Development</p>
+          <Slide direction="up" duration={800} triggerOnce>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-6 mt-4 sm:mt-8">
+              <StatCard
+                icon={<GrDeploy className="w-6 h-6 sm:w-8 sm:h-8 text-sky-600" />}
+                title={`${duration}+ Years`}
+                subtitle="Development"
+              />
+              <StatCard
+                icon={<LiaRunningSolid className="w-6 h-6 sm:w-8 sm:h-8 text-emerald-500" />}
+                title="1000+ KM"
+                subtitle="Running per year"
+              />
+              <StatCard
+                icon={<FiCamera className="w-6 h-6 sm:w-8 sm:h-8 text-indigo-500" />}
+                title="Capture"
+                subtitle="Photography"
+              />
             </div>
+          </Slide>
 
-            <div className="p-6 bg-white/50 shadow-md rounded-xl backdrop-blur-lg hover:shadow-lg transform transition-transform hover:scale-105">
-              <LiaRunningSolid className="w-10 h-10 mb-2 mx-auto text-green-600" />
-              <p className="font-semibold text-lg">1000+ KM</p>
-              <p className="text-sm text-gray-600">Running per year</p>
-            </div>
-
-            <div className="p-6 bg-white/50 shadow-md rounded-xl backdrop-blur-lg hover:shadow-lg transform transition-transform hover:scale-105">
-              <FiCamera className="w-10 h-10 mb-2 mx-auto text-purple-600" />
-              <p className="font-semibold text-lg">Capture</p>
-              <p className="text-sm text-gray-600">Photography</p>
-            </div>
-          </div>
-        </Slide>
-
-        <Slide direction="down" delay={200} duration={1000} triggerOnce>
-          <p className="text-lg text-gray-700 mt-8 max-w-xl mx-auto leading-relaxed">
-            Crafting financial lending systems—engineer by day, runner by passion.
-          </p>
-        </Slide>
+          <Slide direction="down" delay={200} duration={800} triggerOnce>
+            <p className="text-gray-600 mt-6 sm:mt-8 mx-auto text-sm sm:text-base leading-relaxed max-w-xs sm:max-w-md px-1">
+              Crafting financial solutions by day, chasing horizons by passion.
+            </p>
+          </Slide>
+        </div>
       </Fade>
     </div>
 
-    {/* Floating Animation */}
+    {/* Mobile-Friendly Animations */}
     <style>{`
       @keyframes float {
-        0%, 100% { transform: translateY(0); opacity: 0.3; }
-        50% { transform: translateY(-10px); opacity: 0.5; }
+        0%, 100% { transform: translateY(0) scale(1); opacity: 0.2; }
+        50% { transform: translateY(-8px) scale(1.02); opacity: 0.3; }
+      }
+      @keyframes soft-bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+      }
+      .animate-soft-bounce { animation: soft-bounce 3s ease-in-out infinite; }
+      
+      @media (max-width: 640px) {
+        .animate-soft-bounce { animation-duration: 4s; }
       }
     `}</style>
+  </div>
+);
+
+// Responsive Stat Card Component
+const StatCard = ({ icon, title, subtitle }: { icon: React.ReactNode; title: string; subtitle: string }) => (
+  <div className="p-3 sm:p-4 bg-white/80 backdrop-blur-xs sm:backdrop-blur-lg rounded-lg sm:rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 sm:hover:-translate-y-1">
+    <div className="flex flex-col items-center space-y-1 sm:space-y-2">
+      <div className="p-1 sm:p-2">{icon}</div>
+      <h3 className="text-lg sm:text-xl font-semibold text-gray-800">{title}</h3>
+      <p className="text-xs sm:text-sm text-gray-500 font-medium">{subtitle}</p>
+    </div>
   </div>
 );
 

@@ -54,7 +54,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio" className="min-h-screen bg-gray-50 py-12 px-4 md:px-6">
+    <section id="portfolio" className="min-h-screen bg-gray-50 bg-gradient-to-br from-gray-50 to-gray-200 py-12 px-4 md:px-6">
       <div className="max-w-5xl mx-auto">
         {/* Page Title */}
         <JackInTheBox>
