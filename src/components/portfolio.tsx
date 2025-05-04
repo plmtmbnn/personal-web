@@ -22,15 +22,19 @@ const Portfolio = () => {
   const [isCollapsedLOS, setIsCollapsedLOS] = useState(true);
   const [isCollapsedOther, setIsCollapsedOther] = useState(true);
 
-  const toggleCollapse = (setter: any) => setter((prev: any) => !prev);
+  const toggleCollapse = (setter: React.Dispatch<React.SetStateAction<boolean>>) => {
+    setter((prev) => !prev);
+  };
 
   const data = {
     labels: ['LOS & LMS Core Systems', 'Other Projects'],
     datasets: [
       {
         data: [80, 20],
-        backgroundColor: ['#396afc', '#74ebd5'],
-        borderWidth: 0
+        backgroundColor: ['#3b82f6', '#b7f8db'],
+        borderWidth: 1,
+        borderColor: '#ffffff',
+        borderRadius: 5
       }
     ]
   };
@@ -41,7 +45,11 @@ const Portfolio = () => {
     plugins: {
       legend: {
         position: 'top',
-        labels: { font: { size: 12 } }
+        labels: {
+          font: {
+            size: 14
+          }
+        }
       },
       tooltip: {
         callbacks: {
@@ -50,11 +58,27 @@ const Portfolio = () => {
         bodyFont: { size: 12 },
         titleFont: { size: 14 }
       }
+    },
+    onClick: (_evt: any, elements: any[]) => {
+      if (elements.length > 0) {
+        if(elements[0]?.index === 1) {
+          setIsCollapsedLOS(true);
+          setIsCollapsedOther(false);
+        }
+        if(elements[0]?.index === 0) {
+          setIsCollapsedLOS(false);
+          setIsCollapsedOther(true);
+        }
+        
+      }
     }
   };
 
   return (
-    <section id="portfolio" className="min-h-screen bg-gray-50 bg-gradient-to-br from-gray-50 to-gray-200 py-12 px-4 md:px-6">
+    <section
+      id="portfolio"
+      className="min-h-screen bg-gray-50 bg-gradient-to-br from-gray-50 to-gray-200 py-12 px-4 md:px-6"
+    >
       <div className="max-w-5xl mx-auto">
         {/* Page Title */}
         <JackInTheBox>
@@ -66,19 +90,17 @@ const Portfolio = () => {
         {/* Main Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Pie Chart */}
-          <div className="flex justify-center">
-            <Zoom>
-              <div className="bg-white rounded-xl shadow-md p-4 w-60 md:w-72">
-                <Pie data={data} options={{ ...options as any }} />
-              </div>
-            </Zoom>
-          </div>
+          <Zoom triggerOnce>
+            <div className="bg-white rounded-xl shadow-md p-4 w-full h-72 md:h-80 flex justify-center items-center">
+              <Pie data={data} options={options as any} />
+            </div>
+          </Zoom>
 
-          {/* Project Sections */}
+          {/* Project Descriptions */}
           <div className="space-y-6">
-            {/* LOS & LMS Core Systems */}
-            <Fade>
-              <div className="bg-white rounded-xl shadow-md p-5 transition duration-300 hover:shadow-lg">
+            {/* LOS Section */}
+            <Fade triggerOnce>
+              <div className="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition">
                 <h3
                   className="text-lg font-semibold cursor-pointer flex items-center mb-3"
                   onClick={() => toggleCollapse(setIsCollapsedLOS)}
@@ -91,7 +113,7 @@ const Portfolio = () => {
                     isCollapsedLOS ? 'max-h-0' : 'max-h-[400px]'
                   }`}
                 >
-                  <p className="text-sm leading-relaxed mb-3 text-gray-700">
+                  <p className="text-sm text-gray-700 mb-3 leading-relaxed">
                     Developed end-to-end LOS & LMS systems for multiple companies:
                   </p>
                   <ul className="list-disc list-inside text-sm space-y-1 text-gray-700">
@@ -107,9 +129,9 @@ const Portfolio = () => {
               </div>
             </Fade>
 
-            {/* Other Notable Projects */}
-            <Fade>
-              <div className="bg-white rounded-xl shadow-md p-5 transition duration-300 hover:shadow-lg">
+            {/* Other Projects Section */}
+            <Fade triggerOnce>
+              <div className="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition">
                 <h3
                   className="text-lg font-semibold cursor-pointer flex items-center mb-3"
                   onClick={() => toggleCollapse(setIsCollapsedOther)}

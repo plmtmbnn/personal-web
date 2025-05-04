@@ -29,7 +29,7 @@ const Home = () => (
     <div className="text-center w-full max-w-2xl relative z-10 space-y-6 sm:space-y-8 px-2">
       <JackInTheBox delay={200} triggerOnce>
         <div className="inline-block animate-soft-bounce">
-          <span className="text-4xl sm:text-5xl">🌏</span>
+          <span className="text-4xl sm:text-8xl">🌏</span>
         </div>
       </JackInTheBox>
 
@@ -38,6 +38,12 @@ const Home = () => (
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-sky-600 to-teal-400 bg-clip-text text-transparent px-2">
             Polma Tambunan
           </h1>
+          <Slide direction="down" delay={200} duration={800} triggerOnce>
+            <p className="text-gray-600 mt-6 sm:mt-8 mx-auto text-sm sm:text-base leading-relaxed max-w-xs sm:max-w-md px-1">
+            Engineering impactful solutions and running intentional miles—dedicated to both code and life. Bit by Bit, Mile by Mile.
+            </p>
+          </Slide>
+          
 
           <Slide direction="up" duration={800} triggerOnce>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-6 mt-4 sm:mt-8">
@@ -59,11 +65,7 @@ const Home = () => (
             </div>
           </Slide>
 
-          <Slide direction="down" delay={200} duration={800} triggerOnce>
-            <p className="text-gray-600 mt-6 sm:mt-8 mx-auto text-sm sm:text-base leading-relaxed max-w-xs sm:max-w-md px-1">
-              Crafting financial solutions by day, chasing horizons by passion.
-            </p>
-          </Slide>
+          
         </div>
       </Fade>
     </div>
