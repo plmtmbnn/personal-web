@@ -15,3 +15,13 @@
       animation: none !important;
     }
   }
+
+/* Add smooth scroll behavior */
+html {
+  @apply scroll-smooth;
+}
+
+/* Better transitions for dark mode */
+*, *::before, *::after {
+  @apply transition-colors duration-300;
+}

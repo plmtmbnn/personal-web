@@ -1,7 +1,6 @@
 import { Fade, JackInTheBox, Slide } from 'react-awesome-reveal';
 import { DiPostgresql } from 'react-icons/di';
-import { FaNode, FaDocker, FaReact, FaCameraRetro, FaRunning, FaFutbol } from 'react-icons/fa';
-import { MdOutlineModeOfTravel } from 'react-icons/md';
+import { FaNode, FaDocker, FaReact } from 'react-icons/fa';
 
 const experienceYears = new Date().getFullYear() - 2018;
 
@@ -21,7 +20,7 @@ const About = () => (
       {/* Content Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
         <InfoCard
-          title="Professional Role"
+          title="My Work"
           content={`Remote software engineer with ${experienceYears}+ years specializing in financial systems, building secure and scalable lending solutions.`}
           icons={[
             { icon: <FaNode className="w-full h-full" />, color: 'text-green-600' },
@@ -33,13 +32,13 @@ const About = () => (
         />
 
         <InfoCard
-          title="Hobbies & Interests"
-          content="Trail runner capturing landscapes through photography. Football enthusiast and adventure traveler."
+          title="My Play"
+          content="Consists of pounding pavements and dusty trails, framing breathtaking scenes, celebrating goals, and embracing the unknown."
           icons={[
-            { icon: <FaRunning className="w-full h-full" />, color: 'text-emerald-500' },
-            { icon: <FaFutbol className="w-full h-full" />, color: 'text-red-500' },
-            { icon: <FaCameraRetro className="w-full h-full" />, color: 'text-gray-600' },
-            { icon: <MdOutlineModeOfTravel className="w-full h-full" />, color: 'text-indigo-500' }
+            { icon: <span className="w-full h-full">🏃</span>, color: 'text-emerald-500' },
+            { icon: <span className="w-full h-full">⚽</span>, color: 'text-red-500' },
+            { icon: <span className="w-full h-full">📸</span>, color: 'text-gray-600' },
+            { icon: <span className="w-full h-full">🌄</span>, color: 'text-indigo-500' }
           ]}
           delay={500}
         />

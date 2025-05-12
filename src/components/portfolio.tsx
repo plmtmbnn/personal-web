@@ -77,18 +77,18 @@ const Portfolio = () => {
   return (
     <section
       id="portfolio"
-      className="min-h-screen bg-gray-50 bg-gradient-to-br from-gray-50 to-gray-200 py-12 px-4 md:px-6"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 px-4 sm:px-6 py-12"
     >
-      <div className="max-w-5xl mx-auto">
-        {/* Page Title */}
-        <JackInTheBox>
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">
-            My Portfolio
+      <div className="max-w-4xl w-full text-center space-y-8 sm:space-y-12">
+        {/* Section Title */}
+        <JackInTheBox delay={200} triggerOnce>
+          <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-sky-600 to-teal-400 bg-clip-text text-transparent tracking-tight">
+          Portfolio
           </h2>
         </JackInTheBox>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           {/* Pie Chart */}
           <Zoom triggerOnce>
             <div className="bg-white rounded-xl shadow-md p-4 w-full h-72 md:h-80 flex justify-center items-center">

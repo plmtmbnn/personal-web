@@ -19,16 +19,17 @@ const hobbies = [
 const Adventures = () => (
   <section
     id="adventures"
-    className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 p-6"
+    className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 px-4 sm:px-6 py-12"
   >
-    <div className="max-w-3xl w-full text-gray-900">
+    <div className="max-w-4xl w-full text-center space-y-8 sm:space-y-12">
       {/* Page Title */}
-      <JackInTheBox triggerOnce>
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">Adventures</h2>
+      <JackInTheBox delay={200} triggerOnce>
+        <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-sky-600 to-teal-400 bg-clip-text text-transparent tracking-tight">
+          Adventures</h2>
       </JackInTheBox>
 
       {/* Hobby Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
         {hobbies.map(({ title, description, embedUrl, iframeHeight }, index) => (
           <Zoom delay={200 * index} duration={1000} triggerOnce key={title}>
             <div className="p-5 bg-white rounded-xl shadow-md transition hover:shadow-lg">

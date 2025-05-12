@@ -23,12 +23,13 @@ const contactLinks = [
 const Contact = () => (
   <section
     id="contact"
-    className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 p-6 transition-all duration-1000 ease-in-out"
+    className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 px-4 sm:px-6 py-12"
   >
-    <div className="text-center text-gray-900 max-w-3xl mx-auto space-y-8">
+    <div className="max-w-4xl w-full text-center space-y-8 sm:space-y-12">
       {/* Heading */}
-      <JackInTheBox triggerOnce>
-        <h2 className="text-4xl md:text-5xl font-semibold">Let’s Connect!</h2>
+      <JackInTheBox delay={200} triggerOnce>
+        <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-sky-600 to-teal-400 bg-clip-text text-transparent tracking-tight">
+          Let’s Connect!</h2>
       </JackInTheBox>
 
       {/* Subtitle */}
