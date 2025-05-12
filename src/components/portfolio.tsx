@@ -98,7 +98,7 @@ const Portfolio = () => {
 
           {/* Project Descriptions */}
           <div className="space-y-6">
-            {/* LOS Section */}
+            {/* LOS & LMS Section */}
             <Fade triggerOnce>
               <div className="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition">
                 <h3
@@ -110,21 +110,42 @@ const Portfolio = () => {
                 </h3>
                 <div
                   className={`transition-all duration-500 overflow-hidden ${
-                    isCollapsedLOS ? 'max-h-0' : 'max-h-[400px]'
+                    isCollapsedLOS ? 'max-h-0' : 'max-h-[600px]'
                   }`}
                 >
                   <p className="text-sm text-gray-700 mb-3 leading-relaxed">
                     Developed end-to-end LOS & LMS systems for multiple companies:
                   </p>
-                  <ul className="list-disc list-inside text-sm space-y-1 text-gray-700">
-                    <li><strong>Borrower Onboarding</strong> - Streamlined registration & verification.</li>
-                    <li><strong>EKYC System</strong> - Automated identity verification.</li>
-                    <li><strong>Underwriting Workflow</strong> - Risk assessment automation.</li>
-                    <li><strong>Digital Signing</strong> - Secure document authentication.</li>
-                    <li><strong>Disbursement System</strong> - Automated loan processing.</li>
-                    <li><strong>Collection Module</strong> - Debt recovery management.</li>
-                    <li><strong>Accounting & Reporting</strong> - Financial compliance tools.</li>
-                  </ul>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm sm:text-base text-gray-800 mt-6 text-left">
+                    <div>
+                      <p className="font-semibold text-gray-900">👤 Borrower Onboarding</p>
+                      <p className="text-gray-700">Seamless registration and verification process.</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">🔍 eKYC System</p>
+                      <p className="text-gray-700">Automated digital identity verification.</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">📊 Underwriting Workflow</p>
+                      <p className="text-gray-700">Intelligent risk assessment engine.</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">✍️ Digital Signing</p>
+                      <p className="text-gray-700">Secure and compliant document authentication.</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">💸 Disbursement Engine</p>
+                      <p className="text-gray-700">Instant and automated loan processing.</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">📥 Collection Module</p>
+                      <p className="text-gray-700">Smart recovery and repayment tracking.</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">📚 Accounting & Reports</p>
+                      <p className="text-gray-700">Tools for compliance, audit, and insights.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Fade>
@@ -141,30 +162,34 @@ const Portfolio = () => {
                 </h3>
                 <div
                   className={`transition-all duration-500 overflow-hidden ${
-                    isCollapsedOther ? 'max-h-0' : 'max-h-[500px]'
+                    isCollapsedOther ? 'max-h-0' : 'max-h-[600px]'
                   }`}
                 >
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="bg-gray-50 shadow-sm rounded-lg p-4 text-sm text-gray-700">
-                      <h3 className="font-semibold">Insurance Core System</h3>
-                      <p>Product creation, policy management, and underwriting.</p>
+                  <div className="grid md:grid-cols-1 gap-6 text-left text-sm sm:text-base text-gray-800 mt-6">
+                    <div className="bg-gray-50 shadow rounded-xl p-5">
+                      <h3 className="font-semibold text-gray-900 mb-1">🛡️ Insurance Core System</h3>
+                      <p className="text-gray-700">Manage products, policies, and underwriting in one platform.</p>
                     </div>
-                    <div className="bg-gray-50 shadow-sm rounded-lg p-4 text-sm text-gray-700">
-                      <h3 className="font-semibold">Standalone Tools</h3>
-                      <ul className="list-disc list-inside space-y-1">
-                        <li><strong>OCR for Indonesia KTP</strong> - Automated ID data extraction.</li>
-                        <li><strong>Bank Statement Extractor</strong> - Structured financial data extraction.</li>
-                      </ul>
+
+                    <div className="bg-gray-50 shadow rounded-xl p-5">
+                      <h3 className="font-semibold text-gray-900 mb-1">🧰 Standalone Tools</h3>
+                      <p className="text-gray-700">
+                        <span className="block"><strong>🔎 KTP OCR:</strong> Automated ID data extraction from Indonesian KTP.</span>
+                        <span className="block mt-1"><strong>🏦 Bank Statement Extractor:</strong> Extract structured financial data instantly.</span>
+                      </p>
                     </div>
-                    <div className="bg-gray-50 shadow-sm rounded-lg p-4 text-sm text-gray-700">
-                      <h3 className="font-semibold">Organization App</h3>
-                      <p>Membership onboarding, digital cards, and cadre management.</p>
+
+                    <div className="bg-gray-50 shadow rounded-xl p-5">
+                      <h3 className="font-semibold text-gray-900 mb-1">🏛️ Organization App</h3>
+                      <p className="text-gray-700">Handle member onboarding, digital identity cards, and cadre tracking efficiently.</p>
                     </div>
-                    <div className="bg-gray-50 shadow-sm rounded-lg p-4 text-sm text-gray-700">
-                      <h3 className="font-semibold">Investment App</h3>
-                      <p>Real-time news feeds, market data, and portfolio management.</p>
+
+                    <div className="bg-gray-50 shadow rounded-xl p-5">
+                      <h3 className="font-semibold text-gray-900 mb-1">📈 Investment App</h3>
+                      <p className="text-gray-700">Stay updated with live news, market trends, and portfolio insights.</p>
                     </div>
                   </div>
+
                 </div>
               </div>
             </Fade>

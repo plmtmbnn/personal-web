@@ -1,33 +1,28 @@
-import { FiArrowRight } from 'react-icons/fi';
+import { JackInTheBox, Slide } from 'react-awesome-reveal';
 import { Link } from 'react-router-dom';
 
-const NotFound = () => {
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 via-gray-950 to-black text-gray-300 px-6 py-16">
-      <div className="text-center space-y-6">
-        {/* Glowing 404 Number */}
-        <h1 className="text-9xl font-extrabold text-gray-600 drop-shadow-[0_0_20px_rgba(255,255,255,0.2)] select-none animate-pulse">
-          404
-        </h1>
+const NotFound = () => (
+  <section className="min-h-screen flex flex-col items-center justify-center px-6 bg-gradient-to-br from-gray-100 to-gray-200 text-center">
+    <JackInTheBox triggerOnce>
+      <h1 className="text-7xl sm:text-8xl font-extrabold text-sky-600 tracking-tight">404</h1>
+    </JackInTheBox>
 
-        {/* Message */}
-        <p className="text-xl font-semibold text-gray-100">Oops! Page Not Found</p>
-        <p className="text-md text-gray-400">
-          The page you're looking for doesn't exist or has been moved.
-        </p>
+    <Slide direction="up" delay={200} triggerOnce>
+      <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 mt-4">
+        Page Not Found
+      </h2>
+      <p className="mt-2 text-gray-600 text-sm sm:text-base max-w-md">
+        Sorry, the page you are looking for doesn’t exist or has been moved. Let’s get you back home.
+      </p>
 
-        {/* Button with Smooth Hover Animation */}
-        <Link
-          to="/"
-          className="inline-flex items-center space-x-3 px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-all duration-300
-          shadow-md shadow-blue-500/20 hover:shadow-lg hover:shadow-blue-500/30"
-        >
-          <span className="font-medium text-lg">Return Home</span>
-          <FiArrowRight className="w-6 h-6 transition-transform duration-300 group-hover:translate-x-2" />
-        </Link>
-      </div>
-    </div>
-  );
-};
+      <Link
+        to="/"
+        className="inline-block mt-6 px-5 py-2 bg-sky-600 text-white rounded-lg hover:bg-sky-700 transition-all duration-300 shadow-sm"
+      >
+        Go Home
+      </Link>
+    </Slide>
+  </section>
+);
 
 export default NotFound;
