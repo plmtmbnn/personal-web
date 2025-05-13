@@ -1,6 +1,7 @@
 import { Fade, JackInTheBox, Slide } from 'react-awesome-reveal';
 import { DiPostgresql } from 'react-icons/di';
-import { FaNode, FaDocker, FaReact } from 'react-icons/fa';
+import { FaNode, FaReact } from 'react-icons/fa';
+import { FaGolang } from 'react-icons/fa6';
 
 const experienceYears = new Date().getFullYear() - 2018;
 
@@ -26,7 +27,7 @@ const About = () => (
             { icon: <FaNode className="w-full h-full" />, color: 'text-green-600' },
             { icon: <DiPostgresql className="w-full h-full" />, color: 'text-blue-600' },
             { icon: <FaReact className="w-full h-full" />, color: 'text-sky-500' },
-            { icon: <FaDocker className="w-full h-full" />, color: 'text-teal-600' }
+            { icon: <FaGolang className="w-full h-full" />, color: 'text-teal-600' }
           ]}
           delay={300}
         />
