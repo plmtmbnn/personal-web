@@ -2,6 +2,8 @@ import { Fade, Slide } from 'react-awesome-reveal';
 import { LiaRunningSolid } from 'react-icons/lia';
 import { GrDeploy } from 'react-icons/gr';
 import profileImage from '/profile.png';
+import CountdownNumber from '../useCountdown';
+
 
 const experienceYears = new Date().getFullYear() - 2018;
 
@@ -48,14 +50,14 @@ const Home = () => (
             <div className="flex items-center gap-4 p-4 bg-white shadow-sm rounded-lg border border-gray-100">
               <GrDeploy className="w-7 h-7 text-sky-600" />
               <div>
-                <p className="text-lg font-semibold text-gray-800">{experienceYears}+ Years</p>
+                <p className="text-lg font-semibold text-gray-800"><CountdownNumber to={experienceYears} duration={2000} />+ Years</p>
                 <p className="text-sm text-gray-600">in Software Development</p>
               </div>
             </div>
             <div className="flex items-center gap-4 p-4 bg-white shadow-sm rounded-lg border border-gray-100">
               <LiaRunningSolid className="w-7 h-7 text-emerald-500" />
               <div>
-                <p className="text-lg font-semibold text-gray-800">1000+ KM</p>
+                <p className="text-lg font-semibold text-gray-800"><CountdownNumber to={1000} duration={2000} />+ KM</p>
                 <p className="text-sm text-gray-600">Running per year</p>
               </div>
             </div>
