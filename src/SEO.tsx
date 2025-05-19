@@ -16,7 +16,7 @@ const SEO = () => (
     {/* Open Graph (OG) Meta */}
     <meta property="og:title" content="Polma Tambunan | Thoughtful Engineering. Intentional Running" />
     <meta property="og:description" content="Polma Tambunan's personal website. Engineering impactful solutions and running intentional miles—dedicated to both code and life." />
-    <meta property="og:image" content="https://www.polmatambunan.my.id/vite.svg" />
+    <meta property="og:image" content="https://www.polmatambunan.my.id/profile.png" />
     <meta property="og:url" content="https://www.polmatambunan.my.id" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Polma Tambunan" />
@@ -26,7 +26,7 @@ const SEO = () => (
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Polma Tambunan | Thoughtful Engineering. Intentional Running" />
     <meta name="twitter:description" content="Polma Tambunan's personal website. Engineering impactful solutions and running intentional miles—dedicated to both code and life." />
-    <meta name="twitter:image" content="https://www.polmatambunan.my.id/vite.svg" />
+    <meta name="twitter:image" content="https://www.polmatambunan.my.id/profile.png" />
     <meta name="twitter:creator" content="@PolmaTambunan" />
   </Helmet>
 );

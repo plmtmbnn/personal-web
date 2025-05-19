@@ -1,15 +1,15 @@
 import { Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
-import NotFound from './components/not-found';
+import NotFound from './pages/not-found';
 import Loader from './Loader';
 
 // Lazy-loaded pages
-const Home = lazy(() => import('./components/home'));
-const About = lazy(() => import('./components/about'));
-const Portfolio = lazy(() => import('./components/portfolio'));
-const Adventures = lazy(() => import('./components/adventures'));
-const Blog = lazy(() => import('./components/blog'));
-const Contact = lazy(() => import('./components/contact'));
+const Home = lazy(() => import('./pages/home'));
+const About = lazy(() => import('./pages/about'));
+const Portfolio = lazy(() => import('./pages/portfolio'));
+const Adventures = lazy(() => import('./pages/adventures'));
+const Blog = lazy(() => import('./pages/blog'));
+const Contact = lazy(() => import('./pages/contact'));
 
 
 

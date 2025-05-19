@@ -25,9 +25,9 @@ const About = () => (
           content={`I'm a remote software engineer with ${experienceYears}+ years of experience, focused on designing robust, secure, and scalable financial systems — particularly in lending and fintech.`}
           icons={[
             { icon: <FaNode className="w-full h-full" />, color: 'text-green-600' },
+            { icon: <FaGolang className="w-full h-full" />, color: 'text-teal-600' },
             { icon: <DiPostgresql className="w-full h-full" />, color: 'text-blue-600' },
-            { icon: <FaReact className="w-full h-full" />, color: 'text-sky-500' },
-            { icon: <FaGolang className="w-full h-full" />, color: 'text-teal-600' }
+            { icon: <FaReact className="w-full h-full" />, color: 'text-sky-500' }
           ]}
           delay={300}
         />
@@ -65,15 +65,19 @@ const InfoCard = ({
         <h3 className="text-xl font-semibold text-gray-800 mb-3">{title}</h3>
         <p className="text-gray-600 text-base leading-relaxed mb-4">{content}</p>
         <div className="flex justify-center gap-4">
-          {icons.map((item, index) => (
-            <div
-              key={index}
-              className={`p-3 rounded-lg ${item.color} bg-gray-50/60 group-hover:bg-white transition-colors duration-300 flex items-center justify-center`}
-              style={{ width: '2.75rem', height: '2.75rem' }}
-            >
-              {item.icon}
-            </div>
-          ))}
+          <Fade delay={500}>
+
+            {icons.map((item, index) => (
+              <div
+                key={index}
+                className={`p-3 rounded-lg ${item.color} bg-gray-50/60 group-hover:bg-white transition-colors duration-300 flex items-center justify-center`}
+                style={{ width: '2.75rem', height: '2.75rem' }}
+              >
+                {item.icon}
+              </div>
+            ))}
+          </Fade>
+
         </div>
       </div>
     </Slide>

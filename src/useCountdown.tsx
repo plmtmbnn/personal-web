@@ -30,7 +30,7 @@ const CountUpNumber = ({ to, duration = 2000 }: CountUpNumberProps) => {
   }, [to, duration]);
 
   return (
-    <span className="text-4xl font-bold text-blue-600">{value}</span>
+    <span className="text-4xl font-bold text-gray-800 leading-tight bg-gradient-to-r from-sky-600 to-teal-400 bg-clip-text text-transparent">{value}</span>
   );
 };
 
