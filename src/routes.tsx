@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import NotFound from './pages/not-found';
 import Loader from './Loader';
+import BlogDetail from './pages/blog/blog-detail';
 
 // Lazy-loaded pages
 const Home = lazy(() => import('./pages/home'));
@@ -21,6 +22,7 @@ const AppRoutes = () => (
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/adventures" element={<Adventures />} />
       <Route path="/blog" element={<Blog />} />
+      <Route path="/blog/:slug" element={<BlogDetail />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

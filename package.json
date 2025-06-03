@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "turbo run vite",
+    "start": "vite",
     "build": "turbo run tsc && turbo run vite:build",
     "vite:build": "vite build",
     "tsc": "tsc -b",

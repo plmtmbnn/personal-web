@@ -3,16 +3,15 @@ import { JackInTheBox, Zoom } from 'react-awesome-reveal';
 
 const blogPosts = [
   {
-    title: 'Writing',
-    description: 'No ideas to share just yet—stay tuned!',
-    link: '#'
+    title: 'Pogram 2 Bulan, weight loss & pace 5:00min/KM',
+    description: 'Fokus: Menurunkan berat badan ke 63–64 kg, mengecilkan lingkar perut, dan meningkatkan pace lari ke 5:00 menit/km.',
+    link: '/fwef'
   }
-  // Future blog posts can be added here
+  // Add future posts here
 ];
 
 const Blog = () => (
   <>
-    {/* SEO & Meta Tags */}
     <Helmet>
       <title>Blog | Polma Tambunan</title>
       <meta name="description" content="Explore my thoughts, writings, and experiences. Stay tuned for updates!" />
@@ -29,29 +28,40 @@ const Blog = () => (
       <meta name="twitter:image" content="/vite.svg" />
     </Helmet>
 
-    {/* Blog Page Content */}
-    <section id="blog"     className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 px-4 sm:px-6 py-12"
+    <section
+      id="blog"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 px-4 sm:px-6 py-16"
     >
-      <div className="max-w-4xl w-full text-center space-y-8 sm:space-y-12">
-        {/* Page Title */}
-        <JackInTheBox delay={200} triggerOnce>
-          <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-sky-600 to-teal-400 bg-clip-text text-transparent tracking-tight">Blog</h2>
+      <div className="max-w-3xl w-full text-center space-y-12">
+        <JackInTheBox delay={150} triggerOnce>
+          <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-sky-600 to-teal-400 bg-clip-text text-transparent tracking-tight">
+            Blog
+          </h2>
         </JackInTheBox>
 
-        {/* Blog Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-          {blogPosts.map(({ title, description, link }, index) => (
-            <Zoom key={title} delay={150 * index} duration={800} triggerOnce>
-              <a
-                href={link}
-                className="block p-6 bg-white text-gray-900 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
-              >
-                <h3 className="text-lg md:text-xl font-semibold">{title}</h3>
-                <p className="text-sm md:text-base mt-2">{description}</p>
-              </a>
-            </Zoom>
-          ))}
-        </div>
+        {blogPosts.length === 0 ? (
+          <p className="text-gray-600 text-base sm:text-lg">
+            No blog posts yet — stay tuned!
+          </p>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
+            {blogPosts.map(({ title, description, link }, index) => (
+              <Zoom key={title} delay={120 * index} duration={700} triggerOnce>
+                <a
+                  href={`blog${link}`}
+                  className="block text-left p-5 sm:p-6 bg-white rounded-xl shadow hover:shadow-lg transition-all hover:scale-[1.02] duration-300"
+                >
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900">
+                    {title}
+                  </h3>
+                  <p className="text-sm sm:text-base mt-2 text-gray-600">
+                    {description}
+                  </p>
+                </a>
+              </Zoom>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   </>
