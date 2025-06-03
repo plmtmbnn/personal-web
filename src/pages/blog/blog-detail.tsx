@@ -4,69 +4,69 @@ import { Fade } from 'react-awesome-reveal';
 const BlogDetail = () => {
   // In the future, you can extract this via URL params or props
   const post = {
-    title: 'Pogram 2 Bulan, weight loss & pace 5:00min/KM',
+    title: '🏃‍♂️ Program Latihan 8 Minggu',
     date: 'June 3, 2025',
     content: `
     <div class="max-w-4xl mx-auto">
-      <h1 class="text-3xl font-bold mb-4">Program Latihan 8 Minggu</h1>
-      <p class="mb-6">Fokus: Menurunkan berat badan ke 63–64 kg, mengecilkan lingkar perut, dan meningkatkan pace lari ke 5:00 menit/km.</p>
+      <p class="mb-6">🎯 Tujuan: Turunkan berat badan dari <strong>68 KG → 63 KG</strong>, kecilkan lingkar perut, dan capai pace lari <strong>4:30 menit/km</strong>.</p>
 
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold mb-2">Minggu 1–4: Fondasi Awal</h2>
+      <section class="mb-10">
+        <h2 class="text-2xl font-semibold mb-2">🗓️ Minggu 1–4: Fondasi & Pembakaran Lemak</h2>
         <ul class="list-disc list-inside space-y-1">
-          <li><strong>Senin:</strong> Easy Run 5 KM (pace 6:30–6:45) + Core</li>
-          <li><strong>Selasa:</strong> Strength Full Body</li>
-          <li><strong>Rabu:</strong> Interval 6x400m @5:15–5:00/km</li>
-          <li><strong>Kamis:</strong> Recovery Run 5 KM pace 7:00 + Mobility</li>
-          <li><strong>Jumat:</strong> Upper Body + Core</li>
-          <li><strong>Sabtu:</strong> Long Run 8–10 KM (easy pace)</li>
-          <li><strong>Minggu:</strong> Recovery Aktif (sepeda statis + jalan santai)</li>
+          <li><strong>Senin:</strong> Easy Run 5–6 KM @6:30–6:45 + Core 💪</li>
+          <li><strong>Selasa:</strong> Strength Full Body 🏋️</li>
+          <li><strong>Rabu:</strong> 6x400m Interval @5:15–5:00 🏃‍♂️</li>
+          <li><strong>Kamis:</strong> Recovery Run 5 KM @7:00 + Mobility 🧘</li>
+          <li><strong>Jumat:</strong> Upper Body + Core 🔥</li>
+          <li><strong>Sabtu:</strong> Long Run 8–10 KM (easy pace) ⛰️</li>
+          <li><strong>Minggu:</strong> Recovery Aktif: sepeda statis/jalan 🚴‍♂️</li>
         </ul>
       </section>
 
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold mb-2">Minggu 5–8: Optimalisasi dan Percepatan</h2>
+      <section class="mb-10">
+        <h2 class="text-2xl font-semibold mb-2">⚡ Minggu 5–8: Performa & Pace</h2>
         <ul class="list-disc list-inside space-y-1">
-          <li><strong>Senin:</strong> Tempo Run 5 KM @5:30–5:45 + Core</li>
-          <li><strong>Selasa:</strong> Strength Full Body (beban bertahap)</li>
-          <li><strong>Rabu:</strong> Interval 6x600m / 4x800m @4:50–5:00/km</li>
-          <li><strong>Kamis:</strong> Recovery Run 5 KM pace 6:45–7:00 + Mobility</li>
-          <li><strong>Jumat:</strong> Upper + Core (volume lebih tinggi)</li>
-          <li><strong>Sabtu:</strong> Long Run 11–12 KM + Simulasi race 5 KM</li>
-          <li><strong>Minggu:</strong> Recovery Aktif + Stretching + Tidur cukup</li>
+          <li><strong>Senin:</strong> Tempo Run 5 KM @5:30–5:45 + Core 💨</li>
+          <li><strong>Selasa:</strong> Strength Full Body (beban bertahap) 💪</li>
+          <li><strong>Rabu:</strong> 5x600m atau 4x800m @4:45–4:30 🏃‍♂️</li>
+          <li><strong>Kamis:</strong> Recovery Run 5 KM @7:00 + Mobility 🧘</li>
+          <li><strong>Jumat:</strong> Core + Upper (volume tinggi) 🔄</li>
+          <li><strong>Sabtu:</strong> Long Run 10–12 KM + Test 5K pace 4:30 🏁</li>
+          <li><strong>Minggu:</strong> Recovery Aktif, stretching, tidur cukup 😴</li>
         </ul>
       </section>
 
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold mb-2">Latihan Core (3x/minggu)</h2>
+      <section class="mb-10">
+        <h2 class="text-2xl font-semibold mb-2">🧠 Latihan Core (3x/minggu)</h2>
         <ul class="list-disc list-inside space-y-1">
-          <li>Plank 30–45 detik x 3 set</li>
-          <li>Russian Twist 20x3</li>
-          <li>Ab Wheel Rollout 8–12x3</li>
-          <li>Leg Raise 12–15x3</li>
-          <li>Side Plank 30 detik/sisi x 3</li>
+          <li>Plank 45 detik x 3 ⏱️</li>
+          <li>Ab Wheel Rollout 10x3 🛞</li>
+          <li>Russian Twist 20x3 🔄</li>
+          <li>Side Plank 30 detik/sisi x 3 ↔️</li>
+          <li>Leg Raise 15x3 🦵</li>
         </ul>
       </section>
 
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold mb-2">Latihan Strength (Contoh)</h2>
+      <section class="mb-10">
+        <h2 class="text-2xl font-semibold mb-2">🏋️ Strength Training (Contoh)</h2>
         <ul class="list-disc list-inside space-y-1">
           <li>Goblet Squat 3x12</li>
-          <li>Dumbbell Lunges 3x10 per kaki</li>
-          <li>Push-up 3x sampai gagal teknik benar</li>
-          <li>Dumbbell Shoulder Press 3x10</li>
+          <li>Dumbbell Lunge 3x10 per kaki</li>
+          <li>Push-up 3x sampai gagal</li>
           <li>Bent-over Row 3x10</li>
           <li>Romanian Deadlift 3x10</li>
+          <li>Shoulder Press 3x10</li>
         </ul>
       </section>
 
       <section>
-        <h2 class="text-2xl font-semibold mb-2">Tips Pola Makan</h2>
+        <h2 class="text-2xl font-semibold mb-2">🥗 Tips Pola Makan Sehat</h2>
         <ul class="list-disc list-inside space-y-1">
-          <li>Kurangi gula dan gorengan</li>
-          <li>Tingkatkan protein dan serat (sayur & buah)</li>
-          <li>Minum air putih minimal 2.5 liter/hari</li>
-          <li>Jaga porsi makan dan hindari makan malam berat</li>
+          <li>Kurangi gula & gorengan ❌</li>
+          <li>Konsumsi protein tinggi (telur, ayam, ikan, tempe) 🍗</li>
+          <li>Sayur, buah, oats untuk serat 🍎</li>
+          <li>Minum air putih 2.5–3L per hari 💧</li>
+          <li>Hindari makan malam berat setelah jam 19:30 🌙</li>
         </ul>
       </section>
     </div>

@@ -3,8 +3,8 @@ import { JackInTheBox, Zoom } from 'react-awesome-reveal';
 
 const blogPosts = [
   {
-    title: 'Pogram 2 Bulan, weight loss & pace 5:00min/KM',
-    description: 'Fokus: Menurunkan berat badan ke 63–64 kg, mengecilkan lingkar perut, dan meningkatkan pace lari ke 5:00 menit/km.',
+    title: '🏃‍♂️ Program Latihan 8 Minggu',
+    description: '🎯 Turunkan berat badan dari 68 KG → 63 KG, kecilkan lingkar perut, dan capai pace lari 4:30 menit/km.',
     link: '/fwef'
   }
   // Add future posts here
