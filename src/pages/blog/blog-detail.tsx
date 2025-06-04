@@ -8,6 +8,7 @@ const BlogDetail = () => {
     date: 'June 3, 2025',
     content: `
     <div class="max-w-4xl mx-auto">
+      <h1 class="text-3xl font-bold mb-4">🏃‍♂️ Program Latihan 8 Minggu</h1>
       <p class="mb-6">🎯 Tujuan: Turunkan berat badan dari <strong>68 KG → 63 KG</strong>, kecilkan lingkar perut, dan capai pace lari <strong>4:30 menit/km</strong>.</p>
 
       <section class="mb-10">
@@ -37,25 +38,49 @@ const BlogDetail = () => {
       </section>
 
       <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-2">🧠 Latihan Core (3x/minggu)</h2>
+        <h2 class="text-2xl font-semibold mb-2">💪 Latihan Strength Full Body</h2>
         <ul class="list-disc list-inside space-y-1">
-          <li>Plank 45 detik x 3 ⏱️</li>
-          <li>Ab Wheel Rollout 10x3 🛞</li>
-          <li>Russian Twist 20x3 🔄</li>
-          <li>Side Plank 30 detik/sisi x 3 ↔️</li>
-          <li>Leg Raise 15x3 🦵</li>
+          <li>Goblet Squat – 3x12</li>
+          <li>Dumbbell Lunge – 3x10/kaki</li>
+          <li>Romanian Deadlift – 3x10</li>
+          <li>Push-up – 3x maksimal</li>
+          <li>Plank Row – 3x10</li>
+          <li>Overhead Dumbbell Press – 3x12</li>
         </ul>
       </section>
 
       <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-2">🏋️ Strength Training (Contoh)</h2>
+        <h2 class="text-2xl font-semibold mb-2">🧘 Mobility (Peregangan & Aktivasi)</h2>
         <ul class="list-disc list-inside space-y-1">
-          <li>Goblet Squat 3x12</li>
-          <li>Dumbbell Lunge 3x10 per kaki</li>
-          <li>Push-up 3x sampai gagal</li>
-          <li>Bent-over Row 3x10</li>
-          <li>Romanian Deadlift 3x10</li>
-          <li>Shoulder Press 3x10</li>
+          <li>World’s Greatest Stretch – 2x/sisi</li>
+          <li>Deep Squat Hold – 1–2 menit</li>
+          <li>Hip Circles – 10x/sisi</li>
+          <li>Hamstring Kick – 10x/kaki</li>
+          <li>Lying Glute Bridge – 15x</li>
+          <li>Cat-Cow Stretch – 10x</li>
+        </ul>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-semibold mb-2">🏋️ Upper Body Training</h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Dumbbell Shoulder Press – 3x12</li>
+          <li>Dumbbell Row – 3x10/sisi</li>
+          <li>Push-up – 3x maksimal</li>
+          <li>Plank to Push-up – 10x</li>
+          <li>Triceps Dips – 3x12</li>
+          <li>Renegade Row – 3x10</li>
+        </ul>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-semibold mb-2">🧠 Latihan Core (3x/minggu)</h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Plank – 45 detik x 3 ⏱️</li>
+          <li>Ab Wheel Rollout – 10x3 🛞</li>
+          <li>Russian Twist – 20x3 🔄</li>
+          <li>Side Plank – 30 detik/sisi x 3 ↔️</li>
+          <li>Leg Raise – 15x3 🦵</li>
         </ul>
       </section>
 
@@ -69,8 +94,7 @@ const BlogDetail = () => {
           <li>Hindari makan malam berat setelah jam 19:30 🌙</li>
         </ul>
       </section>
-    </div>
-    `
+    </div>`
   };
 
   return (
