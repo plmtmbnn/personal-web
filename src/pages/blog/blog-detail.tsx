@@ -8,7 +8,6 @@ const BlogDetail = () => {
     date: 'June 3, 2025',
     content: `
     <div class="max-w-4xl mx-auto">
-      <h1 class="text-3xl font-bold mb-4">🏃‍♂️ Program Latihan 8 Minggu</h1>
       <p class="mb-6">🎯 Tujuan: Turunkan berat badan dari <strong>68 KG → 63 KG</strong>, kecilkan lingkar perut, dan capai pace lari <strong>4:30 menit/km</strong>.</p>
 
       <section class="mb-10">
