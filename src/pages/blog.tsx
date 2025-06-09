@@ -1,14 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { JackInTheBox, Zoom } from 'react-awesome-reveal';
-
-const blogPosts = [
-  {
-    title: '🏃‍♂️ Program Latihan 8 Minggu',
-    description: '🎯 Turunkan berat badan dari 68 KG → 63 KG, kecilkan lingkar perut, dan capai pace lari 4:30 menit/km.',
-    link: '/fwef'
-  }
-  // Add future posts here
-];
+import { BlogList } from './blog/blog-list';
+import { Link } from 'react-router-dom';
 
 const Blog = () => (
   <>
@@ -28,10 +21,7 @@ const Blog = () => (
       <meta name="twitter:image" content="/vite.svg" />
     </Helmet>
 
-    <section
-      id="blog"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 px-4 sm:px-6 py-16"
-    >
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 px-4 sm:px-6 py-16">
       <div className="max-w-3xl w-full text-center space-y-12">
         <JackInTheBox delay={150} triggerOnce>
           <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-sky-600 to-teal-400 bg-clip-text text-transparent tracking-tight">
@@ -39,25 +29,21 @@ const Blog = () => (
           </h2>
         </JackInTheBox>
 
-        {blogPosts.length === 0 ? (
+        {BlogList.length === 0 ? (
           <p className="text-gray-600 text-base sm:text-lg">
             No blog posts yet — stay tuned!
           </p>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
-            {blogPosts.map(({ title, description, link }, index) => (
-              <Zoom key={title} delay={120 * index} duration={700} triggerOnce>
-                <a
-                  href={`blog${link}`}
+            {BlogList.map(({ title, description, slug }, index) => (
+              <Zoom key={slug} delay={120 * index} duration={700} triggerOnce>
+                <Link
+                  to={`/blog/${slug}`}
                   className="block text-left p-5 sm:p-6 bg-white rounded-xl shadow hover:shadow-lg transition-all hover:scale-[1.02] duration-300"
                 >
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900">
-                    {title}
-                  </h3>
-                  <p className="text-sm sm:text-base mt-2 text-gray-600">
-                    {description}
-                  </p>
-                </a>
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900">{title}</h3>
+                  <p className="text-sm sm:text-base mt-2 text-gray-600">{description}</p>
+                </Link>
               </Zoom>
             ))}
           </div>
