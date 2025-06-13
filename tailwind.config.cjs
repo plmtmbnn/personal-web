@@ -24,6 +24,11 @@ module.exports = {
         "pattern-cross": "0 0, 20px 20px",
       },
       colors: {
+        primary: '#0d1b2a',
+        secondary: '#1b263b',
+        accent: '#415a77',
+        muted: '#778da9',
+        light: '#e0e1dd',
         'custom-gray': '#f4f4f4', // Custom gray
       },
     },
