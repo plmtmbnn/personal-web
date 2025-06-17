@@ -1,4 +1,3 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: [
@@ -11,7 +10,7 @@ module.exports = {
         '4/3': '4 / 3'
       },
       fontFamily: {
-        nohemi: ["Nohemi", "sans-serif"],
+        sans: ['"Varela Round"', 'sans-serif']
       },
       backgroundImage: {
         "pattern-cross":
@@ -34,6 +33,6 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/typography'), // Optional plugin for typography
+        require('@tailwindcss/typography'),
   ],
 };

@@ -1,27 +1,15 @@
 @import "tailwindcss";
 
+@layer base {
+  body {
+    font-family: 'Varela Round', sans-serif;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   [class*="transform"], 
   [class*="animation"] {
     transform: none !important;
     animation: none !important;
   }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    [class*="transform"], 
-    [class*="animation"] {
-      transform: none !important;
-      animation: none !important;
-    }
-  }
-
-/* Add smooth scroll behavior */
-html {
-  @apply scroll-smooth;
-}
-
-/* Better transitions for dark mode */
-*, *::before, *::after {
-  @apply transition-colors duration-300;
 }

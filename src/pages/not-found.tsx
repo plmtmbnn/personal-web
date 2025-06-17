@@ -11,7 +11,7 @@ const NotFound = () => (
       <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 mt-4">
         Page Not Found
       </h2>
-      <p className="mt-2 text-gray-600 text-sm sm:text-base max-w-md">
+      <p className="questrial-regular mt-2 text-gray-600 text-sm sm:text-base max-w-md">
         Sorry, the page you are looking for doesn’t exist or has been moved. Let’s get you back home.
       </p>
 

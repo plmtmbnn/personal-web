@@ -30,7 +30,7 @@ const Home = () => (
         <Fade delay={150} triggerOnce>
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 leading-tight">
              🌏, I’m{' '}
-            <span className="bg-gradient-to-r from-sky-600 to-teal-400 bg-clip-text text-transparent">
+            <span className="questrial-regular bg-gradient-to-r from-sky-600 to-teal-400 bg-clip-text text-transparent">
               Polma Tambunan 
             </span>
            

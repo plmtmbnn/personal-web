@@ -8,9 +8,9 @@ const App = () => {
   return (
     <HelmetProvider>
       <Router>
-        <SEO />
         <CustomNavbar />
         <AppRoutes />
+        <SEO />
       </Router>
     </HelmetProvider>
   );
