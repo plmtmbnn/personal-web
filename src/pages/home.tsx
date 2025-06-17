@@ -29,17 +29,16 @@ const Home = () => (
       <div className="md:col-span-2 space-y-6 sm:space-y-10 text-left">
         <Fade delay={150} triggerOnce>
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 leading-tight">
-             🌏, I’m{' '}
-            <span className="questrial-regular bg-gradient-to-r from-sky-600 to-teal-400 bg-clip-text text-transparent">
+            {'🌏, I\'m '}
+            <span className="bg-gradient-to-r from-sky-600 to-teal-400 bg-clip-text text-transparent">
               Polma Tambunan 
             </span>
-           
           </h1>
         </Fade>
 
         <Fade delay={350} triggerOnce>
           <p className="text-base sm:text-lg text-gray-800 max-w-3xl">
-            For the past {experienceYears}+ years, I’ve been building secure, scalable, and impactful software—primarily in the fintech
+            For the past {experienceYears}+ years, I've been building secure, scalable, and impactful software—primarily in the fintech
             space. From lending platforms to digital identity systems, I bring engineering focus to critical business
             needs.
           </p>

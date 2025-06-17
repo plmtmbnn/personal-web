@@ -17,7 +17,7 @@ const FloatingNavbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="fixed bottom-6 left-1/2 -translate-x-1/2 flex gap-1 bg-white/80 backdrop-blur-md p-2 rounded-full z-50">
+    <nav className="fixed bottom-4 left-1/2 -translate-x-1/2 flex gap-1 bg-white border-1 border-gray-100 shadow-xl p-1.5 rounded-xl z-50">
       {navItems.map(({ to, icon: Icon, label }) => {
         const isActive = location.pathname === to;
         return (
@@ -25,14 +25,26 @@ const FloatingNavbar = () => {
             key={to}
             to={to}
             aria-label={label}
-            className={`group relative flex items-center justify-center w-10 h-10 rounded-full transition-all duration-300
+            className={`group relative flex items-center justify-center w-10 h-10 rounded-lg transition-all duration-300
               ${
-          isActive
-            ? 'bg-blue-500 text-white'
-            : 'text-gray-700 hover:text-blue-400 hover:bg-text-blue-400/50'
+          isActive 
+            ? 'bg-blue-600 shadow-lg shadow-green-500/30'
+            : 'bg-gray-100 hover:bg-gray-200'
           }`}
           >
-            <Icon size={20} />
+            <div className={`relative z-10 ${
+              isActive 
+                ? 'text-white scale-110' 
+                : 'text-gray-600 group-hover:text-blue-600 group-hover:scale-105'
+            }`}>
+              <Icon size={18} />
+            </div>
+            
+            {/* Active indicator */}
+            {isActive && (
+              <div className="absolute -bottom-2 w-5 h-1 bg-blue-500 rounded-full animate-pulse"></div>
+            )}
+
           </Link>
         );
       })}

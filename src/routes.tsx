@@ -12,8 +12,6 @@ const Adventures = lazy(() => import('./pages/adventures'));
 const Blog = lazy(() => import('./pages/blog'));
 const Contact = lazy(() => import('./pages/contact'));
 
-
-
 const AppRoutes = () => (
   <Suspense fallback={<Loader />}>
     <Routes>
