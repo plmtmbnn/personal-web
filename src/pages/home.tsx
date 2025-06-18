@@ -1,7 +1,7 @@
 import { Fade, Slide } from 'react-awesome-reveal';
 import { LiaRunningSolid } from 'react-icons/lia';
 import { GrDeploy } from 'react-icons/gr';
-import profileImage from '/profile.png';
+import profileImage from '/profile.jpg';
 import CountdownNumber from '../useCountdown';
 
 
