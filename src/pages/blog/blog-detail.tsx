@@ -11,7 +11,6 @@ const BlogDetail = () => {
 
   const isValidSlug = /^\d+$/.test(slug);
   const index = isValidSlug ? Number(slug) - 1 : -1;
-
   const post = index >= 0 && index < BlogList.length ? BlogList[index] : null;
 
   if (!post) {
