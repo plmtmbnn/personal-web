@@ -7,7 +7,7 @@ const formatedDate = (start: number, end: number) => {
 };
 
 const passedPeriod = (startWeek: number, currentDay: number) => {
-  const targetDay = moment(moment(new Date('2025-07-06')).add(startWeek, 'week').add(currentDay, 'days').toDate());
+  const targetDay = moment(moment(new Date('2025-07-07')).add(startWeek, 'week').add(currentDay, 'days').toDate());
   
   if(targetDay.startOf('days').isBefore(moment().startOf('day'))) {
     return '✅';
