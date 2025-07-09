@@ -341,98 +341,52 @@ export const BlogList  = [
     `
   },
   {
-    title: '🏋️‍♂️ Mobility & Strength Routine',
+    title: '💪 Strength & 🤸 Mobility Routine',
     slug: '2',
     description: 'Plug these into your Wednesday (Strength) and Thursday (Mobility) slots.',
-    date: 'June 3, 2025',
+    date: 'June 6, 2025',
     content: `
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
-  <div class="max-w-2xl mx-auto p-6">
-    <!-- Strength Section -->
+
+  <div class="max-w-3xl mx-auto p-6">
+    <p class="mb-8 text-lg text-center">Click the exercises 🔗 to search demos. Stay strong, mobile & marathon-ready! 🏃‍♂️</p>
+
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold text-blue-700 mb-4">Strength Training (2×/week)</h2>
-      <p class="mb-4">3 sets × 8–12 reps, 60–90s rest.</p>
-      <ul class="list-disc list-inside space-y-2">
-        <li>🏋️‍♂️  
-          <a class="text-blue-600 hover:underline" href="https://www.google.com/search?q=Goblet+Squat" target="_blank" rel="noopener">
-            Goblet Squat
-          </a>
-        </li>
-        <li>🏋️‍♂️  
-          <a class="text-blue-600 hover:underline" href="https://www.google.com/search?q=Romanian+Deadlift" target="_blank" rel="noopener">
-            Romanian Deadlift
-          </a>
-        </li>
-        <li>🏋️‍♂️  
-          <a class="text-blue-600 hover:underline" href="https://www.google.com/search?q=Walking+Lunges" target="_blank" rel="noopener">
-            Walking Lunges
-          </a>
-        </li>
-        <li>🏋️‍♂️  
-          <a class="text-blue-600 hover:underline" href="https://www.google.com/search?q=Push+Up+exercise" target="_blank" rel="noopener">
-            Push‑Up
-          </a>
-        </li>
-        <li>🏋️‍♂️  
-          <a class="text-blue-600 hover:underline" href="https://www.google.com/search?q=Single+Arm+Row" target="_blank" rel="noopener">
-            Single‑Arm Row
-          </a>
-        </li>
-        <li>🏋️‍♂️  
-          <a class="text-blue-600 hover:underline" href="https://www.google.com/search?q=Plank+with+Shoulder+Tap" target="_blank" rel="noopener">
-            Plank with Shoulder Tap
-          </a>
-        </li>
-        <li>🏋️‍♂️  
-          <a class="text-blue-600 hover:underline" href="https://www.google.com/search?q=Glute+Bridge+March" target="_blank" rel="noopener">
-            Glute Bridge March
-          </a>
-        </li>
+      <h2 class="text-2xl font-semibold text-green-700 mb-4">🏋️‍♂️ Strength Training (2×/week)</h2>
+      <p class="mb-4 text-sm text-gray-600">3 sets × 8–12 reps | Rest: 60–90s ⏱️</p>
+      <ul class="list-disc list-inside space-y-3">
+        <li>🏋️‍♂️ <a href="https://www.google.com/search?q=Goblet+Squat" target="_blank" class="text-blue-600 hover:underline">Goblet Squat</a> — Quads, glutes, core 🔥</li>
+        <li>🦵 <a href="https://www.google.com/search?q=Romanian+Deadlift" target="_blank" class="text-blue-600 hover:underline">Romanian Deadlift</a> — Hamstrings & glutes power 💥</li>
+        <li>🚶‍♂️ <a href="https://www.google.com/search?q=Walking+Lunges" target="_blank" class="text-blue-600 hover:underline">Walking Lunges</a> — Single-leg strength & balance ⚖️</li>
+        <li>🙌 <a href="https://www.google.com/search?q=Push+Up+exercise" target="_blank" class="text-blue-600 hover:underline">Push-Up</a> — Upper body & core 🏋️</li>
+        <li>🏋️‍♀️ <a href="https://www.google.com/search?q=Single+Arm+Row+exercise" target="_blank" class="text-blue-600 hover:underline">Single-Arm Row</a> — Back & posture 🦍</li>
+        <li>🛡️ <a href="https://www.google.com/search?q=Plank+with+Shoulder+Tap" target="_blank" class="text-blue-600 hover:underline">Plank with Shoulder Tap</a> — Core control & anti-rotation 💪</li>
+        <li>🍑 <a href="https://www.google.com/search?q=Glute+Bridge+March" target="_blank" class="text-blue-600 hover:underline">Glute Bridge March</a> — Glute & hip stability 🌉</li>
+        <li>🌀 <a href="https://www.google.com/search?q=Side+Plank+with+Leg+Lift" target="_blank" class="text-blue-600 hover:underline">Side Plank + Leg Lift</a> — Core & hip strength 🔄</li>
+        <li>🐞 <a href="https://www.google.com/search?q=Dead+Bug+exercise" target="_blank" class="text-blue-600 hover:underline">Dead Bug</a> — Core coordination 🧘‍♂️</li>
+        <li>🪜 <a href="https://www.google.com/search?q=Step+Ups+with+weights" target="_blank" class="text-blue-600 hover:underline">Weighted Step-Ups</a> — Powerful legs & balance 🏃‍♂️</li>
+        <li>🛒 <a href="https://www.google.com/search?q=Farmer+Carry+exercise" target="_blank" class="text-blue-600 hover:underline">Farmer's Carry</a> — Full-body strength & endurance 💪</li>
       </ul>
     </section>
 
-    <!-- Mobility Section -->
-    <section>
-      <h2 class="text-2xl font-semibold text-blue-700 mb-4">Mobility Routine (2×/week)</h2>
-      <p class="mb-4">30s – 1min each, 2 rounds.</p>
-      <ul class="list-disc list-inside space-y-2">
-        <li>🤸  
-          <a class="text-blue-600 hover:underline" href="https://www.google.com/search?q=Hip+Flexor+lunge+stretch" target="_blank" rel="noopener">
-            Hip Flexor &amp; Quad Stretch
-          </a>
-        </li>
-        <li>🤸  
-          <a class="text-blue-600 hover:underline" href="https://www.google.com/search?q=Pigeon+Pose+yoga" target="_blank" rel="noopener">
-            Pigeon Pose
-          </a>
-        </li>
-        <li>🤸  
-          <a class="text-blue-600 hover:underline" href="https://www.google.com/search?q=World%27s+Greatest+Stretch" target="_blank" rel="noopener">
-            World’s Greatest Stretch
-          </a>
-        </li>
-        <li>🤸  
-          <a class="text-blue-600 hover:underline" href="https://www.google.com/search?q=90%2F90+Hip+Switches" target="_blank" rel="noopener">
-            90/90 Hip Switches
-          </a>
-        </li>
-        <li>🤸  
-          <a class="text-blue-600 hover:underline" href="https://www.google.com/search?q=Ankle+Dorsiflexion+Drill" target="_blank" rel="noopener">
-            Ankle Dorsiflexion Drill
-          </a>
-        </li>
-        <li>🤸  
-          <a class="text-blue-600 hover:underline" href="https://www.google.com/search?q=Thoracic+Extension+Foam+Roller" target="_blank" rel="noopener">
-            Thoracic Extension (Foam Roller)
-          </a>
-        </li>
-        <li>🤸  
-          <a class="text-blue-600 hover:underline" href="https://www.google.com/search?q=Couch+Stretch" target="_blank" rel="noopener">
-            Couch Stretch
-          </a>
-        </li>
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold text-purple-700 mb-4">🤸 Mobility Routine (2×/week)</h2>
+      <p class="mb-4 text-sm text-gray-600">Hold each: 30–60 sec | Rest: minimal or as needed 🌬️</p>
+      <ul class="list-disc list-inside space-y-3">
+        <li>🦵 <a href="https://www.google.com/search?q=Hip+Flexor+Stretch" target="_blank" class="text-blue-600 hover:underline">Hip Flexor Stretch</a> — Open hips & ease tightness 🚀</li>
+        <li>🕊️ <a href="https://www.google.com/search?q=Pigeon+Pose" target="_blank" class="text-blue-600 hover:underline">Pigeon Pose</a> — Deep glute stretch 🧘‍♀️</li>
+        <li>🌎 <a href="https://www.google.com/search?q=World%27s+Greatest+Stretch" target="_blank" class="text-blue-600 hover:underline">World's Greatest Stretch</a> — Full-body mobility 🏆</li>
+        <li>🧩 <a href="https://www.google.com/search?q=90+90+hip+mobility" target="_blank" class="text-blue-600 hover:underline">90/90 Hip Switch</a> — Hip mobility & control 🔄</li>
+        <li>👟 <a href="https://www.google.com/search?q=Ankle+mobility+drill" target="_blank" class="text-blue-600 hover:underline">Ankle Mobility Drill</a> — Better ankle range & running form 🏃‍♀️</li>
+        <li>🧱 <a href="https://www.google.com/search?q=Foam+Roller+Thoracic+Extension" target="_blank" class="text-blue-600 hover:underline">Thoracic Extension (Foam Roller)</a> — Upper back release 🌀</li>
+        <li>🛋️ <a href="https://www.google.com/search?q=Couch+Stretch" target="_blank" class="text-blue-600 hover:underline">Couch Stretch</a> — Deep quad & hip stretch 🏹</li>
+        <li>🦵 <a href="https://www.google.com/search?q=Hamstring+Stretch" target="_blank" class="text-blue-600 hover:underline">Hamstring Stretch</a> — Looser posterior chain 🌿</li>
+        <li>🐈 <a href="https://www.google.com/search?q=Cat+Cow+Stretch" target="_blank" class="text-blue-600 hover:underline">Cat-Cow Stretch</a> — Spine mobility 🐮</li>
+        <li>🧘 <a href="https://www.google.com/search?q=Seated+Forward+Fold+Stretch" target="_blank" class="text-blue-600 hover:underline">Seated Forward Fold</a> — Hamstring & back relief 🌙</li>
+        <li>🧵 <a href="https://www.google.com/search?q=Thread+the+Needle+Stretch" target="_blank" class="text-blue-600 hover:underline">Thread the Needle</a> — Shoulders & upper back 🧶</li>
       </ul>
     </section>
+
   </div>
 
 </body>
