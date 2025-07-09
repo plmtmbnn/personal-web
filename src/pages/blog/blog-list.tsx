@@ -17,7 +17,7 @@ const passedPeriod = (startWeek: number, currentDay: number) => {
     return '▶️🔥';
   }
   
-  return '◻️';
+  return '🔒';
 };
 
 export const BlogList  = [
