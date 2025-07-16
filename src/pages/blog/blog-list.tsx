@@ -14,7 +14,7 @@ const passedPeriod = (startWeek: number, currentDay: number) => {
   }
 
   if(targetDay.isSame(moment().startOf('day'))) {
-    return '▶️🔥';
+    return '⏳';
   }
   
   return '🔒';
@@ -66,78 +66,78 @@ export const BlogList  = [
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 3 📍 [ ${formatedDate(2, 3)} ] </div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 8 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> 🏃 8 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 8 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🏃 16 km LR ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(2, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 8 km EZ ${passedPeriod(2, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(2, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> 🏃 8 km EZ ${passedPeriod(2, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 8 km EZ ${passedPeriod(2, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🏃 16 km LR ${passedPeriod(2, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(2, 6)}</li>
           </ul>
         </div>
         <hr /> <!-- Week 4 (cutback) -->
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 4 <span class="text-sm text-gray-600">(cutback)</span> 📍 [ ${formatedDate(3, 4)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 6 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> 🏃 6 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 6 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🏃 12 km LR ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(3, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 6 km EZ ${passedPeriod(3, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(3, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> 🏃 6 km EZ ${passedPeriod(3, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 6 km EZ ${passedPeriod(3, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🏃 12 km LR ${passedPeriod(3, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(3, 6)}</li>
           </ul>
         </div>
         <hr /> <!-- Week 5 -->
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 5 📍 [ ${formatedDate(4, 5)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 9 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> 🏃 9 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 9 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🏃 18 km LR ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(4, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 9 km EZ ${passedPeriod(4, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(4, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> 🏃 9 km EZ ${passedPeriod(4, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 9 km EZ ${passedPeriod(4, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🏃 18 km LR ${passedPeriod(4, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(4, 6)}</li>
           </ul>
         </div>
         <hr /> <!-- Week 6 -->
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 6 📍 [ ${formatedDate(5, 6)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 10 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> 🏃 10 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 10 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🏃 20 km LR ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(5, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 10 km EZ ${passedPeriod(5, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(5, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> 🏃 10 km EZ ${passedPeriod(5, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 10 km EZ ${passedPeriod(5, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🏃 20 km LR ${passedPeriod(5, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(5, 6)}</li>
           </ul>
         </div>
         <hr /> <!-- Week 7 (cutback) -->
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 7 <span class="text-sm text-gray-600">(cutback)</span> 📍 [ ${formatedDate(6, 7)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 8 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> 🏃 8 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 8 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🏃 16 km LR ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(6, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 8 km EZ ${passedPeriod(6, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(6, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> 🏃 8 km EZ ${passedPeriod(6, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 8 km EZ ${passedPeriod(6, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🏃 16 km LR ${passedPeriod(6, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(6, 6)}</li>
           </ul>
         </div>
         <hr /> <!-- Week 8 -->
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 8 📍 [ ${formatedDate(7, 8)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 11 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> 🏃 11 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 11 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🏃 22 km LR ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(7, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 11 km EZ ${passedPeriod(7, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(7, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> 🏃 11 km EZ ${passedPeriod(7, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 11 km EZ ${passedPeriod(7, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🏃 22 km LR ${passedPeriod(7, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(7, 6)}</li>
           </ul>
         </div>
       </div>
@@ -152,78 +152,78 @@ export const BlogList  = [
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 9 📍 [ ${formatedDate(8, 9)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 12 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> ⏱️ Tempo 20′ @ 6:10–6:20 min/km ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 12 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🏃 24 km LR ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(8, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 12 km EZ ${passedPeriod(8, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(8, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> ⏱️ Tempo 20′ @ 6:10–6:20 min/km ${passedPeriod(8, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 12 km EZ ${passedPeriod(8, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🏃 24 km LR ${passedPeriod(8, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(8, 6)}</li>
           </ul>
         </div>
         <hr /> <!-- Week 10 -->
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 10 📍 [ ${formatedDate(9, 10)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 10 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> 🔥 Intervals 6×1 km @ 5:30 min/km ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 10 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🏃 26 km LR ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(9, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 10 km EZ ${passedPeriod(9, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(9, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> 🔥 Intervals 6×1 km @ 5:30 min/km ${passedPeriod(9, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 10 km EZ ${passedPeriod(9, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🏃 26 km LR ${passedPeriod(9, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(9, 6)}</li>
           </ul>
         </div>
         <hr /> <!-- Week 11 -->
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 11 📍 [ ${formatedDate(10, 11)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 14 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> ⏱️ Tempo 25′ @ 6:10–6:20 min/km ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 14 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🏃 28 km LR ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(10, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 14 km EZ ${passedPeriod(10, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(10, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> ⏱️ Tempo 25′ @ 6:10–6:20 min/km ${passedPeriod(10, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 14 km EZ ${passedPeriod(10, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🏃 28 km LR ${passedPeriod(10, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(10, 6)}</li>
           </ul>
         </div>
         <hr /> <!-- Week 12 -->
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 12 📍 [ ${formatedDate(11, 12)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 12 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> 🔥 Intervals 8×800 m @ 5:20 min/km ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 12 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🔄 Progression 18 km (10 km @ MP) ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(11, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 12 km EZ ${passedPeriod(11, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(11, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> 🔥 Intervals 8×800 m @ 5:20 min/km ${passedPeriod(11, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 12 km EZ ${passedPeriod(11, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🔄 Progression 18 km (10 km @ MP) ${passedPeriod(11, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(11, 6)}</li>
           </ul>
         </div>
         <hr /> <!-- Week 13 -->
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 13 📍 [ ${formatedDate(12, 13)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 15 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> ⏱️ Tempo 30′ @ 6:10–6:20 min/km ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 15 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🏃 30 km LR ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(12, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 15 km EZ ${passedPeriod(12, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(12, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> ⏱️ Tempo 30′ @ 6:10–6:20 min/km ${passedPeriod(12, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 15 km EZ ${passedPeriod(12, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🏃 30 km LR ${passedPeriod(12, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(12, 6)}</li>
           </ul>
         </div>
         <hr /> <!-- Week 14 -->
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 14 📍 [ ${formatedDate(13, 14)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 12 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> 🔥 Intervals 5×1 km @ 5:30 min/km ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 12 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🏃 32 km LR ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(13, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 12 km EZ ${passedPeriod(13, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(13, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> 🔥 Intervals 5×1 km @ 5:30 min/km ${passedPeriod(13, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 12 km EZ ${passedPeriod(13, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🏃 32 km LR ${passedPeriod(13, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(13, 6)}</li>
           </ul>
         </div>
       </div>
@@ -238,52 +238,52 @@ export const BlogList  = [
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 15 📍 [ ${formatedDate(14, 15)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 16 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> ⏱️ Tempo 35′ @ 6:10–6:20 min/km ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 16 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🏃 34 km LR ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(14, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 16 km EZ ${passedPeriod(14, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(14, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> ⏱️ Tempo 35′ @ 6:10–6:20 min/km ${passedPeriod(14, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 16 km EZ ${passedPeriod(14, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🏃 34 km LR ${passedPeriod(14, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(14, 6)}</li>
           </ul>
         </div>
         <hr /> <!-- Week 16 -->
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 16 📍 [ ${formatedDate(15, 16)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 14 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> 🔥 Intervals 6×1 km @ 5:30 min/km ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 14 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🔄 Progression 32 km (20 km @ MP) ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(15, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 14 km EZ ${passedPeriod(15, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(15, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> 🔥 Intervals 6×1 km @ 5:30 min/km ${passedPeriod(15, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 14 km EZ ${passedPeriod(15, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🔄 Progression 32 km (20 km @ MP) ${passedPeriod(15, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(15, 6)}</li>
           </ul>
         </div>
         <hr /> <!-- Week 17 -->
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 17 📍 [ ${formatedDate(16, 17)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 18 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> ⏱️ Tempo 40′ @ 6:10–6:20 min/km ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 18 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🏃 36 km LR ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(16, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 18 km EZ ${passedPeriod(16, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(16, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> ⏱️ Tempo 40′ @ 6:10–6:20 min/km ${passedPeriod(16, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 18 km EZ ${passedPeriod(16, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🏃 36 km LR ${passedPeriod(16, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(16, 6)}</li>
           </ul>
         </div>
         <hr /> <!-- Week 18 -->
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 18 📍 [ ${formatedDate(17, 18)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 12 km EZ + strides ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> 🔄 Progression 18 km (last 8 km @ MP) ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 12 km EZ + strides ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🏃 32 km LR (race‑sim fueling & gear) ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(17, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 12 km EZ + strides ${passedPeriod(17, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Strength ${passedPeriod(17, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> 🔄 Progression 18 km (last 8 km @ MP) ${passedPeriod(17, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 12 km EZ + strides ${passedPeriod(17, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🏃 32 km LR (race‑sim fueling & gear) ${passedPeriod(17, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(17, 6)}</li>
           </ul>
         </div>
       </div>
@@ -298,39 +298,39 @@ export const BlogList  = [
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 19 📍 [ ${formatedDate(18, 19)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 14 km EZ + strides ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Light strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> ⏱️ Tempo 20′ @ MP ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 14 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🏃 24 km LR ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(18, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 14 km EZ + strides ${passedPeriod(18, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Light strength ${passedPeriod(18, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> ⏱️ Tempo 20′ @ MP ${passedPeriod(18, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 14 km EZ ${passedPeriod(18, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🏃 24 km LR ${passedPeriod(18, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(18, 6)}</li>
           </ul>
         </div>
         <hr /> <!-- Week 20 -->
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 20 📍 [ ${formatedDate(19, 20)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 10 km EZ + strides ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Light strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> 🔄 Progression 8 km (4 km @ MP) ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 10 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🏃 16 km LR ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(19, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 10 km EZ + strides ${passedPeriod(19, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Light strength ${passedPeriod(19, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> 🔄 Progression 8 km (4 km @ MP) ${passedPeriod(19, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 10 km EZ ${passedPeriod(19, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🏃 16 km LR ${passedPeriod(19, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🚴 Cross‑train ${passedPeriod(19, 6)}</li>
           </ul>
         </div>
         <hr /> <!-- Week 21 -->
         <div>
           <div class="text-xl font-bold text-blue-600 mb-2">Week 21 📍 [ ${formatedDate(20, 21)} ]</div>
           <ul class="space-y-1">
-            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Tue:</span> 🏃 8 km EZ + strides ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Light strength ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Thu:</span> 🏃 6 km EZ + strides ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Fri:</span> 🏃 8 km EZ ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sat:</span> 🏃 4–6 km shake‑out run ${passedPeriod(1, 0)}</li>
-            <li><span class="font-semibold">Sun:</span> 🏁 <strong>Race Day 42.195 km!</strong> ${passedPeriod(1, 0)}</li>
+            <li><span class="font-semibold">Mon:</span> 🛌 Rest ${passedPeriod(20, 0)}</li>
+            <li><span class="font-semibold">Tue:</span> 🏃 8 km EZ + strides ${passedPeriod(20, 1)}</li>
+            <li><span class="font-semibold">Wed:</span> 🏋️‍♂️ Light strength ${passedPeriod(20, 2)}</li>
+            <li><span class="font-semibold">Thu:</span> 🏃 6 km EZ + strides ${passedPeriod(20, 3)}</li>
+            <li><span class="font-semibold">Fri:</span> 🏃 8 km EZ ${passedPeriod(20, 4)}</li>
+            <li><span class="font-semibold">Sat:</span> 🏃 4–6 km shake‑out run ${passedPeriod(20, 5)}</li>
+            <li><span class="font-semibold">Sun:</span> 🏁 <strong>Race Day 42.195 km!</strong> ${passedPeriod(20, 6)}</li>
           </ul>
         </div>
       </div>
