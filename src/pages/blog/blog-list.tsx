@@ -14,7 +14,7 @@ const passedPeriod = (startWeek: number, currentDay: number) => {
   }
 
   if(targetDay.isSame(moment().startOf('day'))) {
-    return '⏳';
+    return '🆕';
   }
   
   return '🔒';
