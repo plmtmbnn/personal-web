@@ -157,7 +157,7 @@ const BlogDetail = () => {
                         prose-ol:text-gray-300 prose-ol:my-6
                         prose-li:my-2
                         prose-img:rounded-xl prose-img:shadow-xl prose-img:my-8
-                        prose-hr:border-gray-700 prose-hr:my-8"
+                        prose-hr:border-gray-700 prose-hr:my-8 text-white"
                       dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.content) }} 
                     />
                   </Fade>
