@@ -1,69 +1,60 @@
 {
-  "name": "personal-web",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "turbo run vite",
-    "start": "vite",
-    "build": "turbo run tsc && turbo run vite:build",
-    "vite:build": "vite build",
-    "tsc": "tsc -b",
-    "preview": "vite preview",
-    "lint": "turbo run lint",
-    "lint:fix": "eslint . --fix",
-    "vite": "vite"
+	"name": "personal-web",
+	"private": true,
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "turbo run vite",
+		"start": "vite",
+		"build": "turbo run tsc && turbo run vite:build",
+		"vite:build": "vite build",
+		"tsc": "tsc -b",
+		"preview": "vite preview",
+		"lint": "biome check .",
+    	"fix": "biome check --write .",
+    	"format": "biome format --write .",
+		"vite": "vite",
+		"prepare": "husky"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+    "*.{ts,tsx,js,jsx,json,css,md}": ["biome check --write"]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "vitest"
-    ]
-  },
-  "dependencies": {
-    "@tailwindcss/typography": "^0.5.16",
-    "@tailwindcss/vite": "^4.0.0",
-    "chart.js": "^4.4.7",
-    "dompurify": "^3.2.6",
-    "framer-motion": "^12.0.6",
-    "moment": "^2.30.1",
-    "react": "^18.3.1",
-    "react-awesome-reveal": "^4.3.1",
-    "react-chartjs-2": "^5.3.0",
-    "react-dom": "^18.3.1",
-    "react-helmet-async": "^2.0.5",
-    "react-icons": "^5.4.0",
-    "react-router-dom": "^7.1.3"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.17.0",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
-    "@typescript-eslint/eslint-plugin": "^8.21.0",
-    "@typescript-eslint/parser": "^8.21.0",
-    "@vitejs/plugin-react": "^4.3.4",
-    "depcheck": "^1.4.7",
-    "eslint": "^9.19.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-refresh": "^0.4.16",
-    "eslint-plugin-unused-imports": "^4.1.4",
-    "globals": "^15.14.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.4.2",
-    "tailwindcss": "^4.0.0",
-    "turbo": "^2.3.4",
-    "typescript": "~5.6.2",
-    "typescript-eslint": "^8.18.2",
-    "vite": "^6.0.5",
-    "vite-imagetools": "^7.0.5",
-    "vite-plugin-compression": "^0.5.1",
-    "vite-plugin-inspect": "^10.1.0"
-  },
-  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
+	"dependencies": {
+		"@tailwindcss/typography": "^0.5.16",
+		"@tailwindcss/vite": "^4.0.0",
+		"chart.js": "^4.4.7",
+		"dompurify": "^3.2.6",
+		"framer-motion": "^12.0.6",
+		"moment": "^2.30.1",
+		"react": "^18.3.1",
+		"react-awesome-reveal": "^4.3.1",
+		"react-chartjs-2": "^5.3.0",
+		"react-dom": "^18.3.1",
+		"react-helmet-async": "^2.0.5",
+		"react-icons": "^5.4.0",
+		"react-router-dom": "^7.1.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.2.5",
+		"@types/react": "^18.3.18",
+		"@types/react-dom": "^18.3.5",
+		"@vitejs/plugin-react": "^4.3.4",
+		"depcheck": "^1.4.7",
+		"globals": "^15.14.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.5.2",
+		"tailwindcss": "^4.0.0",
+		"turbo": "^2.3.4",
+		"typescript": "~5.6.2",
+		"vite": "^6.0.5",
+		"vite-imagetools": "^7.0.5",
+		"vite-plugin-compression": "^0.5.1",
+		"vite-plugin-inspect": "^10.1.0"
+	},
+	"packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
 }

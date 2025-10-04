@@ -1,32 +1,44 @@
-import moment from 'moment';
+import moment from "moment";
 
 const formatedDate = (start: number, end: number) => {
-  return `${moment('2025-07-06').endOf('day').add(start * (start < 1 ? 1 : 7) + (1), 'day').format('DD MMM')} - 
-    ${moment('2025-07-06').endOf('day').add(end * (end < 1 ? 1 : 7), 'day').format('DD MMM')}
-    ${moment('2025-07-06').format('YYYY')}`;
+	return `${moment("2025-07-06")
+		.endOf("day")
+		.add(start * (start < 1 ? 1 : 7) + 1, "day")
+		.format("DD MMM")} - 
+    ${moment("2025-07-06")
+			.endOf("day")
+			.add(end * (end < 1 ? 1 : 7), "day")
+			.format("DD MMM")}
+    ${moment("2025-07-06").format("YYYY")}`;
 };
 
 const passedPeriod = (startWeek: number, currentDay: number) => {
-  const targetDay = moment(moment(new Date('2025-07-07')).add(startWeek, 'week').add(currentDay, 'days').toDate());
-  
-  if(targetDay.startOf('days').isBefore(moment().startOf('day'))) {
-    return '✅';
-  }
+	const targetDay = moment(
+		moment(new Date("2025-07-07"))
+			.add(startWeek, "week")
+			.add(currentDay, "days")
+			.toDate(),
+	);
 
-  if(targetDay.isSame(moment().startOf('day'))) {
-    return '🆕';
-  }
-  
-  return '🔒';
+	if (targetDay.startOf("days").isBefore(moment().startOf("day"))) {
+		return "✅";
+	}
+
+	if (targetDay.isSame(moment().startOf("day"))) {
+		return "🆕";
+	}
+
+	return "🔒";
 };
 
-export const BlogList  = [
-  {
-    title: '🏃‍♂️ 21‑Week Marathon Training Plan',
-    slug: '1',
-    description: '🎯 Each week has one Rest day, easy runs (EZ), key workouts, long runs (LR), strength 🏋️‍♂️ and cross‑training 🚴.',
-    date: 'June 7, 2025',
-    content: `
+export const BlogList = [
+	{
+		title: "🏃‍♂️ 21‑Week Marathon Training Plan",
+		slug: "1",
+		description:
+			"🎯 Each week has one Rest day, easy runs (EZ), key workouts, long runs (LR), strength 🏋️‍♂️ and cross‑training 🚴.",
+		date: "June 7, 2025",
+		content: `
 
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
 
@@ -338,14 +350,15 @@ export const BlogList  = [
 
   </div>
 </body>
-    `
-  },
-  {
-    title: '💪 Strength & 🤸 Mobility Routine',
-    slug: '2',
-    description: 'Plug these into your Wednesday (Strength) and Thursday (Mobility) slots.',
-    date: 'June 6, 2025',
-    content: `
+    `,
+	},
+	{
+		title: "💪 Strength & 🤸 Mobility Routine",
+		slug: "2",
+		description:
+			"Plug these into your Wednesday (Strength) and Thursday (Mobility) slots.",
+		date: "June 6, 2025",
+		content: `
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
 
   <div class="max-w-3xl mx-auto p-6">
@@ -390,6 +403,6 @@ export const BlogList  = [
   </div>
 
 </body>
-    `
-  }
+    `,
+	},
 ];

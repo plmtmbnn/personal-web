@@ -1,37 +1,39 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
 interface CountUpNumberProps {
-  to: number;
-  duration?: number; // in milliseconds
+	to: number;
+	duration?: number; // in milliseconds
 }
 
 const CountUpNumber = ({ to, duration = 2000 }: CountUpNumberProps) => {
-  const [value, setValue] = useState(0);
-  const startTimeRef = useRef<number | null>(null);
+	const [value, setValue] = useState(0);
+	const startTimeRef = useRef<number | null>(null);
 
-  useEffect(() => {
-    const animate = (timestamp: number) => {
-      if (!startTimeRef.current) startTimeRef.current = timestamp;
+	useEffect(() => {
+		const animate = (timestamp: number) => {
+			if (!startTimeRef.current) startTimeRef.current = timestamp;
 
-      const elapsed = timestamp - startTimeRef.current;
-      const progress = Math.min(elapsed / duration, 1);
-      const currentValue = Math.floor(to * progress);
+			const elapsed = timestamp - startTimeRef.current;
+			const progress = Math.min(elapsed / duration, 1);
+			const currentValue = Math.floor(to * progress);
 
-      setValue(currentValue);
+			setValue(currentValue);
 
-      if (progress < 1) {
-        requestAnimationFrame(animate);
-      } else {
-        setValue(to);
-      }
-    };
+			if (progress < 1) {
+				requestAnimationFrame(animate);
+			} else {
+				setValue(to);
+			}
+		};
 
-    requestAnimationFrame(animate);
-  }, [to, duration]);
+		requestAnimationFrame(animate);
+	}, [to, duration]);
 
-  return (
-    <span className="text-4xl font-bold text-gray-800 leading-tight bg-gradient-to-r from-[#11998e] to-[#38ef7d] bg-clip-text text-transparent">{value}</span>
-  );
+	return (
+		<span className="text-4xl font-bold text-gray-800 leading-tight bg-gradient-to-r from-[#11998e] to-[#38ef7d] bg-clip-text text-transparent">
+			{value}
+		</span>
+	);
 };
 
 export default CountUpNumber;
