@@ -23,13 +23,10 @@
 		"noFallthroughCasesInSwitch": true,
 
 		/* Paths & Output */
-		"baseUrl": ".",
 		"paths": {
 			"@/*": ["src/*"]
 		},
 		"outDir": "dist",
-		"ignoreDeprecations": "6.0",
-
 		/* Emit Settings */
 		"skipLibCheck": true, // Skip checking .d.ts files for speed
 		"noEmit": true // Vite handles output
