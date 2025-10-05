@@ -1,36 +1,24 @@
 {
-	"$schema": "https://json.schemastore.org/tsconfig",
-	"compilerOptions": {
-		/* Basic Options */
-		"target": "ES2020", // Compatible with Node 20 and modern browsers
-		"module": "ESNext", // Let Vite handle module bundling
-		"lib": ["DOM", "ES2020", "DOM.Iterable"],
-
-		/* JSX & Module Resolution */
-		"jsx": "react-jsx", // Use 'react-jsx' for React 17+ (or 'preserve' for others)
-		"moduleResolution": "bundler", // Optimized for Vite
-		"allowSyntheticDefaultImports": true,
-		"esModuleInterop": true,
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-
-		/* Strictness */
-		"strict": true,
-		"forceConsistentCasingInFileNames": true,
-		"noImplicitAny": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"noFallthroughCasesInSwitch": true,
-
-		/* Paths & Output */
-		"paths": {
-			"@/*": ["src/*"]
-		},
-		"outDir": "dist",
-		/* Emit Settings */
-		"skipLibCheck": true, // Skip checking .d.ts files for speed
-		"noEmit": true // Vite handles output
-	},
-	"include": ["src"],
-	"exclude": ["node_modules", "dist"]
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx", // ✅ Enables JSX for React 17+
+    "noEmit": true, // Let Vite handle the build output
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src", "vite.config.ts"],
+  "exclude": ["node_modules", "dist"]
 }

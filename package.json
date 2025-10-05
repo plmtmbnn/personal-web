@@ -11,8 +11,8 @@
 		"tsc": "tsc -b",
 		"preview": "vite preview",
 		"lint": "biome check .",
-    	"fix": "biome check --write .",
-    	"format": "biome format --write .",
+		"fix": "biome check --write .",
+		"format": "biome format --write .",
 		"vite": "vite",
 		"prepare": "husky"
 	},
@@ -22,8 +22,10 @@
 		}
 	},
 	"lint-staged": {
-    "*.{ts,tsx,js,jsx,json,css,md}": ["biome check --write"]
-  },
+		"*.{ts,tsx,js,jsx,json,css,md}": [
+			"biome check --write"
+		]
+	},
 	"dependencies": {
 		"@tailwindcss/typography": "^0.5.16",
 		"@tailwindcss/vite": "^4.0.0",
@@ -41,6 +43,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.2.5",
+		"@types/node": "^24.6.2",
 		"@types/react": "^18.3.18",
 		"@types/react-dom": "^18.3.5",
 		"@vitejs/plugin-react": "^4.3.4",
