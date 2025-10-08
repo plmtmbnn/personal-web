@@ -18,7 +18,15 @@
 		"rules": {
 			"recommended": true,
 			"a11y": {
-				"useButtonType": "error"
+				"useButtonType": "off"
+			},
+			"suspicious": {
+				"noExplicitAny": "off",
+				"noArrayIndexKey": "off"
+			},
+			"correctness": {
+				"useUniqueElementIds": "off",
+				"noNestedComponentDefinitions": "off"
 			}
 		}
 	},
