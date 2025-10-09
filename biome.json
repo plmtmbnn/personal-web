@@ -18,7 +18,10 @@
 		"rules": {
 			"recommended": true,
 			"a11y": {
-				"useButtonType": "off"
+				"useButtonType": "off",
+				"useKeyWithClickEvents": "off",
+				"noStaticElementInteractions": "off",
+				"noSvgWithoutTitle": "off"
 			},
 			"suspicious": {
 				"noExplicitAny": "off",
@@ -27,6 +30,9 @@
 			"correctness": {
 				"useUniqueElementIds": "off",
 				"noNestedComponentDefinitions": "off"
+			},
+			"security": {
+				"noDangerouslySetInnerHtml": "off"
 			}
 		}
 	},

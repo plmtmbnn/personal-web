@@ -14,7 +14,7 @@
 		"fix": "biome check --write .",
 		"format": "biome format --write .",
 		"vite": "vite",
-		"prepare": "husky"
+		"prepare": "husky install"
 	},
 	"husky": {
 		"hooks": {
