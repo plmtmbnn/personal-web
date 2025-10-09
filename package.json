@@ -1,7 +1,7 @@
 {
 	"name": "personal-web",
 	"private": true,
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"type": "module",
 	"scripts": {
 		"dev": "turbo run vite",
@@ -14,7 +14,9 @@
 		"fix": "biome check --write .",
 		"format": "biome format --write .",
 		"vite": "vite",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"commit": "cz",
+		"release": "standard-version"
 	},
 	"husky": {
 		"hooks": {
@@ -48,15 +50,20 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.2.5",
+		"@commitlint/cli": "^20.1.0",
+		"@commitlint/config-conventional": "^20.0.0",
 		"@types/leaflet": "^1.9.20",
 		"@types/node": "^24.6.2",
 		"@types/react": "^18.3.18",
 		"@types/react-dom": "^18.3.5",
 		"@vitejs/plugin-react": "^4.3.4",
+		"commitizen": "^4.3.1",
+		"cz-conventional-changelog": "^3.3.0",
 		"depcheck": "^1.4.7",
 		"globals": "^15.14.0",
 		"husky": "^9.1.7",
 		"lint-staged": "^15.5.2",
+		"standard-version": "^9.5.0",
 		"tailwindcss": "^4.0.0",
 		"turbo": "^2.3.4",
 		"typescript": "~5.6.2",
