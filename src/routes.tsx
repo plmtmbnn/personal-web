@@ -7,7 +7,7 @@ import NotFound from "./pages/not-found";
 
 // Lazy-loaded pages
 const Home = lazy(() => import("./pages/home"));
-const About = lazy(() => import("./pages/about"));
+const WorkExperience = lazy(() => import("./pages/work-experience"));
 const Portfolio = lazy(() => import("./pages/portfolio"));
 const Adventures = lazy(() => import("./pages/adventures"));
 const Blog = lazy(() => import("./pages/blog"));
@@ -17,7 +17,7 @@ const AppRoutes = () => (
 	<Suspense fallback={<Loader />}>
 		<Routes>
 			<Route path="/" element={<Home />} />
-			<Route path="/about" element={<About />} />
+			<Route path="/work-experience" element={<WorkExperience />} />
 			<Route path="/portfolio" element={<Portfolio />} />
 			<Route path="/adventures" element={<Adventures />} />
 			<Route path="/blog" element={<Blog />} />
