@@ -1,4 +1,4 @@
-import { JSX } from "react";
+import type { JSX } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { FaChartLine, FaCode, FaRocket, FaTrophy } from "react-icons/fa";
 import {
