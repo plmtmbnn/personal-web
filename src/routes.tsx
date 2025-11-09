@@ -2,7 +2,6 @@ import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import Loader from "./Loader";
 import BlogDetail from "./pages/blog/blog-detail";
-import GPXActivityViewer from "./pages/gpx-previewer";
 import NotFound from "./pages/not-found";
 
 // Lazy-loaded pages
@@ -23,8 +22,6 @@ const AppRoutes = () => (
 			<Route path="/blog" element={<Blog />} />
 			<Route path="/blog/:slug" element={<BlogDetail />} />
 			<Route path="/contact" element={<Contact />} />
-			<Route path="/gpx-preview" element={<GPXActivityViewer />} />
-
 			<Route path="*" element={<NotFound />} />
 		</Routes>
 	</Suspense>
