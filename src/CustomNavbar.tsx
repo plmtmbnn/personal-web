@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
 import { FaRegAddressCard, FaUserNinja } from "react-icons/fa";
 import { GrDeploy } from "react-icons/gr";
-import { HiMenu, HiX } from "react-icons/hi";
 import { PiArticleNyTimesLight } from "react-icons/pi";
 import { TbActivityHeartbeat, TbHomeHeart } from "react-icons/tb";
 import { Link, useLocation } from "react-router-dom";
